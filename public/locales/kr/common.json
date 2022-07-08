@@ -1,0 +1,10 @@
+{
+  "nav-item": {
+    "service": "Service",
+    "hardware": "Hardware",
+    "business-solution": "Business Solution",
+    "contact-us": "Contact Us",
+    "more": "More"
+  },
+  "test": "english"
+}

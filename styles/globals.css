@@ -1,9 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center rounded-md rounded-full px-3 py-2 text-base font-medium text-white transition duration-200 ease-out hover:cursor-pointer;
+  }
+  .btn-outline {
+    @apply inline-flex items-center rounded-md rounded-full border px-3 py-2 text-base font-medium text-white transition duration-200 ease-out  hover:cursor-pointer hover:text-opacity-100 hover:shadow-md active:scale-95;
+  }
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {

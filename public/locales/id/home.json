@@ -1,0 +1,115 @@
+{
+  "hero": {
+    "hero_title": "Solusi Terbaik untuk mengelola bisnis dengan lebih efisien",
+    "hero_subtitle": "Kami menyediakan software untuk POS, Accounting Management, Inventory Management, ERP, Payroll dan masih banyak lagi.",
+    "hero_action_cta": "Pelajari",
+    "hero_action_message": "Chat WhatsApp"
+  },
+  "featured-software": {
+    "Easy A": {
+      "title": "Easy A",
+      "brand": "A",
+      "description": "Aplikasi desktop manajemen akuntansi untuk laporan keuangan Anda."
+    },
+    "Easy POS": {
+      "title": "Easy POS",
+      "brand": "POS",
+      "description": "Aplikasi desktop Point Of Sales yang kompatibel dengan layar sentuh."
+    },
+    "Easy AI": {
+      "title": "Easy AI",
+      "brand": "AI",
+      "description": "Manajemen persediaan yang terhubung dengan akuntansi dan bea cukai"
+    },
+    "Easy H": {
+      "title": "Easy H",
+      "brand": "H",
+      "description": "Manajemen penggajian berdasarkan absensi kehadiran menggunakan perangkat biometrik"
+    },
+    "Easy HR": {
+      "title": "Easy HR",
+      "brand": "HR",
+      "description": "Manajemen karyawan untuk mencatat semua data yang dibutuhkan HRIS."
+    },
+    "Groupware": {
+      "title": "Groupware",
+      "brand": "GR",
+      "description": "Mailing & Manajemen proyek untuk bisnis, sistem berbasis cloud"
+    }
+  },
+  "feature-yubi": {
+    "title": "Kenapa Memilih Yubi?",
+    "descriptions": {
+      "01": {
+        "id": "01",
+        "title": "Layanan Pelanggan 24/7",
+
+        "description": "Kami selalu siap membantu pelanggan kami untuk memecahkan masalah dan memberikan solusi."
+      },
+      "02": {
+        "id": "02",
+        "title": "Mudah Digunakan",
+
+        "description": "Bahkan hal tersulit dalam pekerjaan nyata dapat kami permudah dengan menggunakan perangkat lunak kami."
+      },
+      "03": {
+        "id": "03",
+        "title": "Laporan Komprehensif",
+
+        "description": "Kami membangun setiap perangkat lunak kami dengan laporan terperinci untuk mengakomodasi kebutuhan bisnis apa pun."
+      }
+    }
+  },
+  "advanced-solution": {
+    "as-subtitle": "Solusi Mutakhir",
+    "as-title": "ERP Software",
+    "as-title-2": "(Enterprise Resource Planning)",
+    "as-description": "Untuk bisnis yang serba cepat seperti industri atau franchise kami menyediakan sistem ERP yang handal, cepat dan efisien",
+    "S-ERP": {
+      "title": "S-ERP",
+      "description": "Untuk Perusahaan mengelola waralaba",
+      "cta": "Pelajari"
+    },
+    "P-ERP": {
+      "title": "P-ERP",
+      "description": "Untuk mengelola industri dan Pabrik",
+      "cta": "Segera hadir"
+    }
+  },
+  "testimony": {
+    "title": "Mari kita dengar testimoni dari pelanggan setia kami",
+    "collections": {
+      "01": {
+        "testimony": "Easy POS membantu meningkatkan bisnis kami dengan sangat baik.",
+        "name": "Mr. Park",
+        "owner": "Pemilik Restoran Chung Gi Hwa"
+      },
+      "02": {
+        "testimony": "Manajemen akuntansi kami benar-benar meningkat pesat menggunakan Easy A dari Yubi.",
+        "name": "Ms. Hyun",
+        "owner": "Kepala Bagian Akuntansi PT. Ruang angkasa"
+      },
+      "03": {
+        "testimony": "Lebih mudah mengelola inventory dimanapun dengan Easy AI dari Yubi",
+        "name": "Mr. Baek Dong",
+        "owner": "Pemilik Pabrik Nesia"
+      }
+    }
+  },
+  "business-solution": {
+    "title": "Sesuaikan solusi dengan jenis bisnis anda",
+    "resto": "Resto/Retail/Outlet",
+    "logistic": "Logistik/Shipping",
+    "office": "Kantoran/Administrasi",
+    "factory": "Pabrik/Garmen"
+  },
+  "contact": {
+    "title": "Ajukan pertanyaan kepada kami",
+    "description": "Jangan ragu untuk menghubungi jika Anda memiliki pertanyaan, kami akan membantu Anda untuk memecahkan masalah Anda. Tanpa biaya hanya gratis",
+    "cta": "Hubungi kami"
+  },
+  "CTA": {
+    "title": "Sudah menentukan pilihan? Ayo coba sekarang",
+    "action": "Ajukan Demo"
+  }
+}

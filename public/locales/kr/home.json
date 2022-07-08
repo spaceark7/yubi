@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "hero_title": "Ultimate Solution to manage business more efficient",
+    "hero_subtitle": "We‘re providing software for POS, Accounting Management, Inventory Management, ERP, Payroll and many more.",
+    "hero_action_cta": "Learn more",
+    "hero_action_message": "Chat WhatsApp"
+  },
+  "featured-software": {
+    "Easy POS": {
+      "title": "Easy POS",
+      "brand": "POS",
+      "description": "Point Of Sales desktop app compatible with touchscreen."
+    },
+    "Easy A": {
+      "title": "Easy A",
+      "brand": "A",
+      "description": "Accounting management desktop app for your financial report."
+    },
+
+    "Easy AI": {
+      "title": "Easy AI",
+      "brand": "AI",
+      "description": "Inventory management linked to accounting and customs (Bea Cukai)."
+    },
+    "Easy H": {
+      "title": "Easy H",
+      "brand": "H",
+      "description": "Payroll management based on employee attendance using biometric device"
+    },
+    "Easy HR": {
+      "title": "Easy HR",
+      "brand": "HR",
+      "description": "Employee management to record all needed data of your employee."
+    },
+    "Groupware": {
+      "title": "Groupware",
+      "brand": "GR",
+      "description": "Mailing & Project management for business, cloud based system"
+    }
+  },
+  "feature-yubi": {
+    "title": "Why Choose Yubi?",
+    "descriptions": {
+      "01": {
+        "id": "01",
+        "title": "Customer Support 24/7",
+
+        "description": "We're always ready to help our customer to solve their problem and give prevention solution."
+      },
+      "02": {
+        "id": "02",
+        "title": "Easy to Operate",
+
+        "description": "Even the hardest thing on real-world job we can make easy by using our software."
+      },
+      "03": {
+        "id": "03",
+        "title": "Comprehensive Report",
+
+        "description": "We build every our software with detailed report  to accomodate the need of any business."
+      }
+    }
+  },
+  "advanced-solution": {
+    "as-subtitle": "Advanced solution",
+    "as-title": "ERP Software",
+    "as-title-2": "(Enterprise Resource Planning)",
+    "as-description": "For fast paced business such as industry or franchise we provide ERP system that is reliable, faster and efficient.",
+    "S-ERP": {
+      "title": "S-ERP",
+      "description": "For Enterprise to manage franchise",
+      "cta": "Learn more"
+    },
+    "P-ERP": {
+      "title": "P-ERP",
+      "description": "For Industry to manage business",
+      "cta": "Coming soon"
+    }
+  },
+  "testimony": {
+    "title": "Let‘s hear words from our loyal customer",
+    "collections": {
+      "01": {
+        "testimony": "Easy POS help to improve our business very well.",
+        "name": "Mr. Park",
+        "owner": "Owner Of Chung Gi Hwa Restaurant"
+      },
+      "02": {
+        "testimony": "Our accounting management really improved a lot using Easy A from Yubi.",
+        "name": "Ms. Hyun",
+        "owner": "Head Of Accounting PT. Space"
+      },
+      "03": {
+        "testimony": "Easier to manage inventory everywhere with Easy AI from Yubi",
+        "name": "Mr. Baek Dong",
+        "owner": "Owner of Nesia Factory"
+      }
+    }
+  },
+  "business-solution": {
+    "title": "Solution to fit for many business variant",
+    "resto": "Resto/Retail/Outlet",
+    "logistic": "Logistic/Shipping",
+    "office": "Office Work",
+    "factory": "Factory/Garment"
+  },
+  "contact": {
+    "title": "Feel free to ask us question",
+    "description": "Don't hesitate to contact if you have any question, we'll help you to solve your problem. No charge just free",
+    "cta": "Contact Us"
+  },
+  "CTA": {
+    "title": "Already make decision? Let's try now",
+    "action": "Request Demo"
+  }
+}
