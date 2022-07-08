@@ -27,9 +27,9 @@ const Banner = ({ data }) => {
           <div
             className={`${
               data.rtl ? 'md:pl-8' : 'pl-0'
-            } py-4 lg:w-1/2 lg:py-24`}
+            } py-4 lg:w-1/2 2xl:py-24`}
           >
-            <h1 className='pt-4 text-2xl text-3xl font-bold md:mb-4 lg:text-5xl xl:leading-[52px]'>
+            <h1 className='pt-4 text-2xl font-bold md:mb-4 md:text-3xl xl:text-4xl 2xl:text-5xl 2xl:leading-[52px]'>
               {data.title}
             </h1>
             <p className='max-w-lg pt-4 text-lg text-slate-700 lg:mt-6'>

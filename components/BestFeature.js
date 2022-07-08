@@ -14,7 +14,7 @@ const BestFeature = ({ rtl, data }) => {
           <h1 className='text-center text-3xl font-bold'>{data.title}</h1>
         </div>
       </Layout>
-      <div className='mx-auto w-full max-w-screen-lg px-4  sm:px-0  md:py-16 xl:max-w-screen-xl'>
+      <div className='mx-auto w-full max-w-screen-lg px-4  sm:px-0 md:py-2 xl:max-w-screen-xl 2xl:py-16'>
         <Tab.Group
           vertical
           manual
@@ -46,7 +46,7 @@ const BestFeature = ({ rtl, data }) => {
                 <div
                   className={`${
                     rtl
-                      ? '-translate-x-0 lg:-translate-x-1/3'
+                      ? '-translate-x-0 xl:-translate-x-14 2xl:-translate-x-1/3'
                       : '-translate-x-0'
                   } 'relative mx-auto h-[50vh] w-[80vw] md:h-[60vh] md:w-[50vw] `}
                 >

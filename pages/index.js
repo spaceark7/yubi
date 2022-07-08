@@ -33,8 +33,8 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className='relative  h-[95vh] overflow-hidden md:h-screen'>
-          <div className='mx-auto max-w-screen-lg px-8 pt-24 md:px-10 md:pt-28 '>
-            <h1 className='mb-6  text-4xl font-bold text-white md:text-center md:text-5xl lg:px-32 2xl:px-20'>
+          <div className='mx-auto max-w-screen-lg px-8 pt-24 md:px-10 md:pt-28 xl:max-w-screen-md 2xl:max-w-screen-xl '>
+            <h1 className='mb-6 text-2xl font-bold text-white md:text-center md:text-5xl lg:mx-auto lg:max-w-3xl lg:text-4xl 2xl:max-w-screen-2xl 2xl:px-32 2xl:px-20 2xl:text-6xl'>
               {t('hero.hero_title')}
             </h1>
             <p className='mx-auto text-white  md:max-w-xl md:text-center'>
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
           </div>
           <div className='absolute bottom-0 -z-10 mx-auto w-screen '>
-            <div className='large-mobile:translate-x-1 relative mx-auto w-[45vh] translate-x-0 overflow-hidden opacity-90 sm:w-[50vh] md:w-[60vh] lg:w-[80vh]  '>
+            <div className='large-mobile:translate-x-1 relative mx-auto w-[45vh] translate-x-0 overflow-hidden opacity-90 sm:w-[50vh] md:w-[60vh] 2xl:w-[80vh]  '>
               <Image
                 className='ml-12 w-full'
                 layout='responsive'
@@ -104,17 +104,17 @@ export default function Home() {
                 </div>
               </div>
               <div className='py-4 lg:w-1/2 lg:py-8 '>
-                <h1 className='text-2xl text-3xl font-bold md:mb-4 lg:text-5xl'>
+                <h1 className='text-2xl text-3xl font-bold md:mb-4 xl:text-4xl 2xl:text-5xl'>
                   {t('feature-yubi.title')}
                 </h1>
                 <div className='mt-4 h-[80%] w-full space-y-6  md:space-y-8 lg:mt-8  lg:flex lg:max-w-md lg:flex-col lg:justify-evenly lg:space-y-8'>
                   {banner_2.map((data, index) => (
                     <div key={data.id} className='flex space-x-2 md:space-x-4 '>
-                      <h1 className='text-xl font-bold text-slate-500 lg:text-4xl'>
+                      <h1 className='text-xl font-bold text-slate-500 xl:text-3xl 2xl:text-4xl'>
                         {t(`feature-yubi.descriptions.${data.id}.id`)}
                       </h1>
                       <div>
-                        <h2 className='font-bold text-slate-900 md:text-xl lg:text-2xl'>
+                        <h2 className='font-bold text-slate-900 md:text-xl lg:text-2xl  2xl:text-2xl'>
                           {t(`feature-yubi.descriptions.${data.id}.title`)}
                         </h2>
                         <p className='text-sm md:mt-2 md:text-base'>

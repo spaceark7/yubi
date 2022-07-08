@@ -18,7 +18,7 @@ const RequestDemo = ({ model }) => {
         <div
           className={`relative aspect-square ${
             model
-              ? '-bottom-1/4 -left-6 h-[70vh] w-[70vh]'
+              ? '-left-6 h-[70vh] w-[70vh] 2xl:-bottom-1/4'
               : ' bottom-0 right-0 h-[50vh] w-screen sm:right-0 md:top-0 md:h-[70vh] lg:h-[90vh]'
           }`}
         >

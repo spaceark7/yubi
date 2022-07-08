@@ -38,7 +38,7 @@ const Nav = ({ open, setOpen, lang }) => {
             : open
             ? 'border-none py-3 md:py-4'
             : 'py-2 md:border-b',
-          'item-center  relative mx-auto flex max-w-screen-lg justify-between px-4  transition-all duration-300 ease-out md:py-2 lg:justify-start xl:max-w-screen-xl'
+          'item-center  relative mx-auto flex max-w-screen-lg justify-between px-4  transition-all duration-300 ease-out md:py-2 lg:justify-start 2xl:max-w-screen-xl'
         )}
       >
         <Link href={'/'}>
@@ -65,7 +65,7 @@ const Nav = ({ open, setOpen, lang }) => {
               <h1 className='mb-6 font-bold text-gray-400'>
                 Resto/Office/Business
               </h1>
-
+              {({ isShowing }) => console.log('from show: ', isShowing)}
               {softwares_detail
                 .filter(
                   (value) => value.name !== 'S-ERP' && value.name !== 'P-ERP'
@@ -73,12 +73,14 @@ const Nav = ({ open, setOpen, lang }) => {
                 .map((x) => (
                   <Popover.Button
                     as={Link}
-                    onClick={() => close()}
                     key={x.id}
                     href={`/services/${x.localesId}`}
                     locale={locale}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                    <div
+                      onClick={() => close()}
+                      className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                    >
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -96,12 +98,14 @@ const Nav = ({ open, setOpen, lang }) => {
                 .map((x) => (
                   <Popover.Button
                     as={Link}
-                    onClick={() => close()}
                     key={x.id}
                     href={`/services/${x.localesId}`}
                     locale={locale}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                    <div
+                      onClick={() => close()}
+                      className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                    >
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -122,7 +126,10 @@ const Nav = ({ open, setOpen, lang }) => {
                   className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                   key={x.name}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div
+                    onClick={() => close()}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                  >
                     {x.name}
                   </div>
                 </Popover.Button>
@@ -140,7 +147,10 @@ const Nav = ({ open, setOpen, lang }) => {
                   className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                   key={x.name}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div
+                    onClick={() => close()}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                  >
                     {x.name}
                   </div>
                 </Popover.Button>
@@ -152,12 +162,14 @@ const Nav = ({ open, setOpen, lang }) => {
               {solutions.map((item) => (
                 <Popover.Button
                   as={Link}
-                  onClick={() => close()}
                   key={item.id}
                   href={`/solutions/${item.localesId}`}
                   locale={locale}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div
+                    onClick={() => close()}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                  >
                     {item.name}
                   </div>
                 </Popover.Button>
@@ -172,7 +184,9 @@ const Nav = ({ open, setOpen, lang }) => {
             )}
           >
             <Link href={'/contact'} locale={locale}>
-              {t('nav-item.contact-us')}
+              <div className='cursor-pointer' onClick={() => close()}>
+                {t('nav-item.contact-us')}
+              </div>
             </Link>
           </div>
           <NavItem title={t('nav-item.more')}>
@@ -180,12 +194,14 @@ const Nav = ({ open, setOpen, lang }) => {
               {more_info.map((item) => (
                 <Popover.Button
                   as={Link}
-                  onClick={() => close()}
                   key={item.id}
                   href={`/more/${item.localesId}`}
                   locale={locale}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div
+                    onClick={() => close()}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                  >
                     {item.name}
                   </div>
                 </Popover.Button>

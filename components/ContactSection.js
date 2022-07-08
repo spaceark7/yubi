@@ -9,7 +9,7 @@ const ContactSection = ({ bgSlate }) => {
   return (
     <div className={`${bgSlate ? ' bg-slate-200' : 'bg-white'} `}>
       <div className='lg: relative mx-auto  my-auto max-w-screen-lg px-8 pt-12 sm:px-8 md:px-12 lg:pt-0'>
-        <div className='absolute -left-12 bottom-0 hidden h-[70vh] w-[70vh] md:block '>
+        <div className='absolute bottom-0 hidden h-[70vh] w-[70vh] md:block lg:left-8 2xl:-left-1/4 '>
           <div className='relative'>
             <Image
               className=' hidden h-96 w-96 object-contain lg:block'
@@ -37,7 +37,7 @@ const ContactSection = ({ bgSlate }) => {
           </div>
 
           <div className='mt-6 w-full pb-8 sm:pb-20 md:w-1/2 lg:w-1/2'>
-            <h1 className='mb-6 text-3xl font-bold lg:text-5xl'>
+            <h1 className='mb-6 font-bold lg:text-4xl 2xl:text-5xl'>
               {t('title')}
             </h1>
             <p className='max-w-xl text-lg leading-snug lg:max-w-screen-lg'>
