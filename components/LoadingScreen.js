@@ -7,12 +7,12 @@ const LoadingScreen = ({ isLoading }) => {
     <Transition
       as={Fragment}
       show={isLoading}
-      enter='transform transition-all duration-[400ms]'
-      enterFrom='opacity-0 scale-0'
+      enter='transform transition-all duration-300'
+      enterFrom='opacity-75 scale-80'
       enterTo='opacity-100 scale-100'
-      leave='transform duration-[400ms]  transition-all ease-in-out'
-      leaveFrom='opacity-100 rotate-0 rounded-none scale-100 '
-      leaveTo='opacity-0 scale-70 '
+      leave='transform duration-300  transition-all ease-in-out'
+      leaveFrom='opacity-100 rounded-none scale-100 '
+      leaveTo='opacity-0 '
     >
       <div
         className={

@@ -1,8 +1,11 @@
 import Layout from './Layout'
 import SliderCustomer from './SliderCustomer'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const HeroSection = ({ customers, data }) => {
+  const router = useRouter()
+
   return (
     <div className='z-0 overflow-x-hidden'>
       <div className='relative z-0 min-h-screen overflow-x-hidden pt-28 sm:pt-24 md:pt-32 xl:pt-10'>
