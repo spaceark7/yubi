@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       setLoading(true)
     }
     const handleStop = () => {
-      setTimeout(() => setLoading(false), 1200)
+      setTimeout(() => setLoading(false), 200)
     }
 
     router.events.on('routeChangeStart', handleStart)

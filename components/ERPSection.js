@@ -141,7 +141,7 @@ const ERPSection = () => {
                       {t('S-ERP.description')}
                     </h1>
                     <div className='cursor-pointer'>
-                      <Link href={'/solutions/s-erp'} locale={locale}>
+                      <Link href={'/services/s-erp'} locale={locale}>
                         <div className='inline-flex items-center space-x-3 text-slate-600'>
                           <span>{t('S-ERP.cta')}</span>
                           <span>

@@ -192,43 +192,37 @@ const softwares_detail = [
           thumbs: '/products/s-erp/thumbs/dashboard.png',
           title: 'Master Menu & dashboard',
           description:
-            'Easily manage user access, permission, warehouse, products, customer, company information and more.',
+            'Easily manage user access, permission, customer, company information and more.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/purchase.png',
-          title: 'Purchase Management',
+          thumbs: '/products/easya/thumbs/journal.png',
+          title: 'Ledgers Feature',
           description:
-            'Easily manage your purchase order, invoice, payment, and more',
+            'Easily manage your general ledger, history, expense, log create ledger, and account reference.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/inventory.png',
-          title: 'Inventory Management',
+          thumbs: '/products/easya/thumbs/quick_asset.png',
+          title: 'Quick Assets Feature',
           description:
-            'Easily manage your inventory, ingoing, outgoing, stock opname, inventory closing stock, stock card report and more',
+            'Easily manage your Daily cash matrix, Bank Book, Payment of Balance Account, Payment of Customer and more',
         },
         {
-          thumbs: '/products/s-erp/thumbs/sales.png',
-          title: 'Order Management',
+          thumbs: '/products/easya/thumbs/fix_asset.png',
+          title: 'Fixed Assets Feature',
           description:
-            'Easily manage your sales order, quotation, status report, and more',
+            'Easily manage register Fixed assets, Tangible fixed assets, accumulated depreciation, Type of Depreciation options.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/invoice.png',
-          title: 'Sales Management',
+          thumbs: '/products/easya/thumbs/link_s-erp.png',
+          title: 'Link to S-ERP',
           description:
-            'Easily manage your sales invoice, payment, advance and more',
+            'Linked data to S-ERP such as Account Payable, Account Receivable, Due date Account Payable, and Customer Balance.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/accounting.png',
-          title: 'Linked To Accounting',
+          thumbs: '/products/easya/thumbs/report.png',
+          title: 'Report Feature',
           description:
-            'Transfering data from S-ERP to Accounting is easy and fast',
-        },
-        {
-          thumbs: '/products/s-erp/thumbs/report.png',
-          title: 'Report Management',
-          description:
-            'Easily manage your daily sales report or monthly sales report, and more',
+            'Generating Trial Balance, Profit & Lost, Balance Sheet, Income Statement, Cash Flow, and more.',
         },
       ],
     },
@@ -289,45 +283,37 @@ const softwares_detail = [
       features: [
         {
           thumbs: '/products/s-erp/thumbs/dashboard.png',
-          title: 'Master Menu & dashboard',
+          title: 'Order Management',
           description:
-            'Easily manage user access, permission, warehouse, products, customer, company information and more.',
-        },
-        {
-          thumbs: '/products/s-erp/thumbs/purchase.png',
-          title: 'Purchase Management',
-          description:
-            'Easily manage your purchase order, invoice, payment, and more',
+            'Start production based on order define style and production parameter.',
         },
         {
           thumbs: '/products/s-erp/thumbs/inventory.png',
           title: 'Inventory Management',
           description:
-            'Easily manage your inventory, ingoing, outgoing, stock opname, inventory closing stock, stock card report and more',
+            'Manage your inventory activity by Inbound, Outbound and Purchase.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/sales.png',
-          title: 'Order Management',
+          thumbs: '/products/s-erp/thumbs/purchase.png',
+          title: 'Product Management',
           description:
-            'Easily manage your sales order, quotation, status report, and more',
+            'Make your custom style and shipping registration right in this menu.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/invoice.png',
-          title: 'Sales Management',
-          description:
-            'Easily manage your sales invoice, payment, advance and more',
+          thumbs: '/products/easya/thumbs/journal.png',
+          title: 'Ledger Book',
+          description: 'Record assets based on inventory ingoing and outgoing.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/accounting.png',
-          title: 'Linked To Accounting',
-          description:
-            'Transfering data from S-ERP to Accounting is easy and fast',
+          thumbs: '/products/easyai/thumbs/customs.png',
+          title: 'Compliant with Bea Cukai document',
+          description: "we are following bea cukai's mandatory document.",
         },
         {
-          thumbs: '/products/s-erp/thumbs/report.png',
-          title: 'Report Management',
+          thumbs: '/products/easyai/thumbs/trace.png',
+          title: 'Tracing material',
           description:
-            'Easily manage your daily sales report or monthly sales report, and more',
+            'Tracing material is a feature that helps you to track your material and its usage.',
         },
       ],
     },
@@ -376,53 +362,47 @@ const softwares_detail = [
           slate: false,
           rtl: true,
           image: '/products/easyh/payroll_banner@2x.png',
-          title: 'Manual Calculation can be painful and error prone',
+          title: 'Easy H helps you to calculate payroll automatically',
           description:
-            'Hence, we provide you payroll system to calculate automatically employee salary',
+            'Using employee attendance, salary compoenent such as basic salary, overtime, BPJS, Taxes and more',
         },
       ],
       features: [
         {
-          thumbs: '/products/s-erp/thumbs/dashboard.png',
-          title: 'Master Menu & dashboard',
+          thumbs: '/products/easyh/thumbs/personal.png',
+          title: 'Personal basic information',
           description:
-            'Easily manage user access, permission, warehouse, products, customer, company information and more.',
+            'Registering employee data with ID, Phone number, BPJS TK, BPJS Kesehatan, NPWP, Bank account, working hours and more.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/purchase.png',
-          title: 'Purchase Management',
+          thumbs: '/products/easyh/thumbs/duty.png',
+          title: 'Duty management',
           description:
-            'Easily manage your purchase order, invoice, payment, and more',
+            'configure every single employee Attendance and overtime data collection based on attendance device such fingerprint, face recognition, and more.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/inventory.png',
-          title: 'Inventory Management',
+          thumbs: '/products/easyh/thumbs/salary.png',
+          title: 'Salary Management',
           description:
-            'Easily manage your inventory, ingoing, outgoing, stock opname, inventory closing stock, stock card report and more',
+            'Calculated employee basic salary, incentives, and other salary components in one screen.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/sales.png',
-          title: 'Order Management',
+          thumbs: '/products/easyh/thumbs/slip.png',
+          title: 'Generate Salary Slip',
           description:
-            'Easily manage your sales order, quotation, status report, and more',
+            'Our system providing salary slip print out for employee.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/invoice.png',
-          title: 'Sales Management',
+          thumbs: '/products/easyh/thumbs/report_1.png',
+          title: 'Summary report',
           description:
-            'Easily manage your sales invoice, payment, advance and more',
+            'We provide summary report for entire employee based on basic salary and more.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/accounting.png',
-          title: 'Linked To Accounting',
+          thumbs: '/products/easyh/thumbs/bpjs.png',
+          title: 'BPJS TKU & Kesehatan Report',
           description:
-            'Transfering data from S-ERP to Accounting is easy and fast',
-        },
-        {
-          thumbs: '/products/s-erp/thumbs/report.png',
-          title: 'Report Management',
-          description:
-            'Easily manage your daily sales report or monthly sales report, and more',
+            'We provide BPJS TKU and BPJS Kesehatan summary report calculated automatically.',
         },
       ],
     },
@@ -438,26 +418,20 @@ const softwares_detail = [
       {
         slate: false,
         rtl: true,
-        image: '/products/easyai/mock-easyai_1@2x.png',
-        title: 'Built in ledger for accounting',
+        image: '/products/easyh/banner_hr.webp',
+        title: 'Complete the payroll features with Easy HR',
         description:
-          'Every transaction is registered on ledger book to ease on auditing.',
+          'Make Human Resource works easier to record employee data based on academic, Medical, education, career and much more.',
+        cta: 'easy-hr',
       },
       {
         slate: false,
         rtl: false,
-        image: '/products/easyai/mock-easyai_2@2x.png',
-        title: 'Production becomes more controlled',
+        image: '/products/easyh/finger_devices.webp',
+        title: 'Looking for the attendance device?',
         description:
-          'Your inventory flow can be easily tracked for monitoring progress',
-      },
-      {
-        slate: false,
-        rtl: true,
-        image: '/products/easyai/mock-easyai_3@2x.png',
-        title: 'Never miss calculate your stocks',
-        description:
-          'Keep your stock remain balance by registering every transaction.',
+          'We have plenty of devices to fit your needs and working smoothly with Easy H Payroll.',
+        cta_hw: 'access-control-attendance',
       },
     ],
     testimonial: true,
@@ -485,70 +459,51 @@ const softwares_detail = [
           image: '/products/easyhr/hr_1@2x.png',
           title: 'Evaluating employee with complete data',
           description:
-            'It will help you to decide which action to take for company growth',
+            'It will help you to decide which action to take for company growth.',
         },
       ],
       features: [
         {
-          thumbs: '/products/s-erp/thumbs/dashboard.png',
-          title: 'Master Menu & dashboard',
+          thumbs: '/products/easyhr/thumbs/personal_1.png',
+          title: 'Personal Basic Info',
           description:
-            'Easily manage user access, permission, warehouse, products, customer, company information and more.',
+            'Complete record of employee data include family member, medical, training, academic, and reward/warning.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/purchase.png',
-          title: 'Purchase Management',
+          thumbs: '/products/easyhr/thumbs/users.png',
+          title: 'Unlimited User Registration',
           description:
-            'Easily manage your purchase order, invoice, payment, and more',
+            'You are freely add or remove as much user as you want, and you can manage them with ease.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/inventory.png',
-          title: 'Inventory Management',
+          thumbs: '/products/easyhr/thumbs/org.png',
+          title: 'Organization Management',
           description:
-            'Easily manage your inventory, ingoing, outgoing, stock opname, inventory closing stock, stock card report and more',
+            'Manage your company structure and employee per departmenet structure.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/sales.png',
-          title: 'Order Management',
+          thumbs: '/products/easyhr/thumbs/reward.png',
+          title: 'Giving reward or warning in app',
           description:
-            'Easily manage your sales order, quotation, status report, and more',
+            'No need to write a note, just give a reward or warning using out Reward/Warn Feature.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/invoice.png',
-          title: 'Sales Management',
+          thumbs: '/products/easyhr/thumbs/cv.png',
+          title: 'Personal Curriculum Vitae',
           description:
-            'Easily manage your sales invoice, payment, advance and more',
-        },
-        {
-          thumbs: '/products/s-erp/thumbs/accounting.png',
-          title: 'Linked To Accounting',
-          description:
-            'Transfering data from S-ERP to Accounting is easy and fast',
-        },
-        {
-          thumbs: '/products/s-erp/thumbs/report.png',
-          title: 'Report Management',
-          description:
-            'Easily manage your daily sales report or monthly sales report, and more',
+            'With this feature, you can see your personal curriculum vitae in one comprehensive report.',
         },
       ],
     },
     banner: [
       {
-        slate: true,
-        rtl: false,
-        image: '/products/easyhr/hr_1@2x.png',
-        title: 'Structured and well decumented',
-        description:
-          'Encourage to a take further evaluating based on well documented data',
-      },
-      {
         slate: false,
         rtl: true,
-        image: '/products/easyai/mock-easyai_1@2x.png',
-        title: 'Built in ledger for accounting',
+        image: '/products/easyhr/easyh_ss.png',
+        title: 'Manage payroll with Easy H',
         description:
-          'Every transaction is registered on ledger book to ease on auditing.',
+          'Automatically calculate salary based on employee attendance.',
+        cta: 'easy-h',
       },
     ],
     testimonial: true,

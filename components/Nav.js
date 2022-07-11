@@ -65,7 +65,7 @@ const Nav = ({ open, setOpen, lang }) => {
               <h1 className='mb-6 font-bold text-gray-400'>
                 Resto/Office/Business
               </h1>
-              {({ isShowing }) => console.log('from show: ', isShowing)}
+
               {softwares_detail
                 .filter(
                   (value) => value.name !== 'S-ERP' && value.name !== 'P-ERP'
@@ -77,10 +77,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     href={`/services/${x.localesId}`}
                     locale={locale}
                   >
-                    <div
-                      onClick={() => close()}
-                      className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                    >
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -102,10 +99,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     href={`/services/${x.localesId}`}
                     locale={locale}
                   >
-                    <div
-                      onClick={() => close()}
-                      className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                    >
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -126,10 +120,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                   key={x.name}
                 >
-                  <div
-                    onClick={() => close()}
-                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                  >
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                     {x.name}
                   </div>
                 </Popover.Button>
@@ -147,10 +138,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                   key={x.name}
                 >
-                  <div
-                    onClick={() => close()}
-                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                  >
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                     {x.name}
                   </div>
                 </Popover.Button>
@@ -166,10 +154,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   href={`/solutions/${item.localesId}`}
                   locale={locale}
                 >
-                  <div
-                    onClick={() => close()}
-                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                  >
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                     {item.name}
                   </div>
                 </Popover.Button>
@@ -184,9 +169,7 @@ const Nav = ({ open, setOpen, lang }) => {
             )}
           >
             <Link href={'/contact'} locale={locale}>
-              <div className='cursor-pointer' onClick={() => close()}>
-                {t('nav-item.contact-us')}
-              </div>
+              <div className='cursor-pointer'>{t('nav-item.contact-us')}</div>
             </Link>
           </div>
           <NavItem title={t('nav-item.more')}>
@@ -198,10 +181,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   href={`/more/${item.localesId}`}
                   locale={locale}
                 >
-                  <div
-                    onClick={() => close()}
-                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                  >
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
                     {item.name}
                   </div>
                 </Popover.Button>

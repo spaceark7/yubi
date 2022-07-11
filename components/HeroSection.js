@@ -10,13 +10,13 @@ const HeroSection = ({ customers, data }) => {
     <div className='z-0 overflow-x-hidden'>
       <div className='relative z-0 min-h-screen overflow-x-hidden pt-28 sm:pt-24 md:pt-32 xl:pt-10'>
         <Layout>
-          <div className='h-[75vh] md:h-[70vh] lg:px-10 xl:h-[75vh] 2xl:h-[70vh]'>
+          <div className='h-[75vh] md:h-[70vh] lg:px-10 xl:h-[75vh] 2xl:h-[80vh]'>
             <div
               className={`${
                 data?.is_dark ? 'text-white' : 'text-gray-800'
-              } my-auto h-full md:pt-20`}
+              } my-auto h-full md:pt-20 2xl:pt-32 `}
             >
-              <h1 className='max-w-lg text-4xl font-bold drop-shadow-md sm:text-5xl md:text-6xl lg:max-w-md lg:leading-[64px] xl:max-w-md xl:text-5xl 2xl:max-w-xl'>
+              <h1 className='max-w-lg text-4xl font-bold drop-shadow-md sm:text-5xl md:text-6xl lg:max-w-md lg:leading-[64px] xl:max-w-md xl:text-5xl 2xl:max-w-xl '>
                 {data?.title}
               </h1>
               <p className='mt-6 text-xl opacity-95 sm:max-w-md lg:text-base 2xl:max-w-xl 2xl:text-xl'>

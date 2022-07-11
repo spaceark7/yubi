@@ -1,25 +1,26 @@
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useState } from 'react'
 
 const NavLangMobile = ({ lang }) => {
-  const [selected, setSelected] = React.useState(lang[0])
+  const router = useRouter()
+  const { locale, locales } = router
+
+  const [selected, setSelected] = useState(locale)
   return (
     <div className='flex items-center justify-between text-lg text-slate-500'>
-      <span className='font-bold'>Language</span>{' '}
+      <span className='font-bold'>Language</span>
       <div className='mr-2 flex space-x-8 font-bold'>
-        {' '}
-        {lang.map((item, index) => (
+        {locales.map((item, index) => (
           <span
             onClick={() => {
-              setSelected(lang[index])
+              setSelected(item)
             }}
             key={index}
             className={`${
-              selected.code === item.code
-                ? 'text-primaryBrand'
-                : 'text-slate-500'
+              selected === item ? 'text-primaryBrand' : 'text-slate-500'
             } cursor-pointer`}
           >
-            {item.code}
+            {item.toUpperCase()}
           </span>
         ))}
       </div>

@@ -44,6 +44,15 @@ const Banner = ({ data }) => {
                 </Link>
               </div>
             ) : null}
+            {data.cta_hw ? (
+              <div className='mt-4'>
+                <Link href={`/hardware/${data.cta_hw}`}>
+                  <p className='mt-4 cursor-pointer py-2 pr-4 text-primaryBrand hover:underline'>
+                    Learn More
+                  </p>
+                </Link>
+              </div>
+            ) : null}
           </div>
         </div>
       </Layout>

@@ -1,10 +1,9 @@
 import { Popover, Transition, Menu } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
-import { Children, Fragment } from 'react'
+import { Fragment } from 'react'
 import { useScrollHooks, classNames } from '../hooks/useScrollHooks'
 import { useState } from 'react'
 
-import { useRouter } from 'next/router'
 const NavItem = ({ title, children }) => {
   const scrollPos = useScrollHooks()
   const [isShowing, setIsShowing] = useState(false)
