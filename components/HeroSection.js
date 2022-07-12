@@ -5,6 +5,9 @@ import { useRouter } from 'next/router'
 
 const HeroSection = ({ customers, data }) => {
   const router = useRouter()
+  const text = decodeURI(
+    'Halo, saya tertarik dengan program yubi. Bisa minta info lebih lanjut?'
+  )
 
   return (
     <div className='z-0 overflow-x-hidden'>
@@ -40,26 +43,30 @@ const HeroSection = ({ customers, data }) => {
 
               <div className='flex flex-col lg:flex-row '>
                 {data?.is_contact && (
-                  <div
+                  <a
+                    href={`https://wa.me/+6281290049231?text=${text}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
                     className={`${
                       !data.is_dark
                         ? 'btn mt-12 bg-primaryBrand hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand 2xl:text-xl'
                         : 'btn mt-12 bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand 2xl:text-xl'
-                    } w-fit lg:px-6`}
+                    } w-fit select-none lg:px-6`}
                   >
                     Send WhatApps Message
-                  </div>
+                  </a>
                 )}
 
                 {data?.is_contact && (
-                  <div
+                  <a
+                    href='mailto:cs@yubiteck.com'
                     className={`
                    
                     btn mt-3 w-fit border-2 border-white hover:text-opacity-100  hover:shadow-md active:scale-95 active:bg-white active:text-sky-500 sm:mt-6 sm:ml-0
                    lg:mt-12 lg:ml-4 lg:px-6 2xl:text-xl`}
                   >
                     Send Email
-                  </div>
+                  </a>
                 )}
               </div>
             </div>

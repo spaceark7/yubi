@@ -37,7 +37,10 @@ const NavLang = ({ lang }) => {
           leaveFrom='opacity-100 translate-y-0'
           leaveTo='opacity-0 translate-y-5'
         >
-          <Listbox.Options className='absolute mt-1 h-fit w-fit overflow-auto rounded-md bg-white px-4 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'>
+          <Listbox.Options
+            onMouseLeave={() => setIsShowing(false)}
+            className='absolute mt-1 h-fit w-fit overflow-auto rounded-md bg-white px-4 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
+          >
             {locales.map((item, index) => (
               <Listbox.Option
                 key={index}
