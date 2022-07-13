@@ -15,7 +15,7 @@ const NavItem = ({ title, children }) => {
             onMouseEnter={() => setIsShowing(true)}
             className={classNames(
               scrollPos > 20 ? 'text-gray-800' : 'text-white',
-              'group flex w-fit items-center rounded-md px-3 py-2 text-base font-bold hover:text-opacity-100 focus:outline-none lg:text-sm'
+              'group flex w-fit items-center rounded-md px-3 py-2 text-base font-bold hover:text-opacity-100 focus:outline-none lg:text-sm 2xl:text-base'
             )}
           >
             <span>{title}</span>

@@ -4,12 +4,14 @@ const software = [
     title: 'Easy POS',
     brand: 'POS',
     description: 'Point Of Sales desktop app compatible with touchscreen.',
+    cta: 'easy-pos',
   },
   {
     id: 2,
     title: 'Easy A',
     brand: 'A',
     description: 'Accounting management desktop app for your financial report.',
+    cta: 'easy-a',
   },
   {
     id: 3,
@@ -17,6 +19,7 @@ const software = [
     brand: 'AI',
     description:
       'Inventory management linked to accounting and customs (Bea Cukai).',
+    cta: 'easy-ai',
   },
   {
     id: 4,
@@ -24,6 +27,8 @@ const software = [
     brand: 'H',
     description:
       'Payroll management based on employee attendant using biometric device',
+
+    cta: 'easy-h',
   },
   {
     id: 5,
@@ -31,6 +36,7 @@ const software = [
     brand: 'HR',
     description:
       'Employee management to record all needed data of your employee.',
+    cta: 'easy-hr',
   },
   {
     id: 6,
@@ -38,6 +44,7 @@ const software = [
     brand: 'GR',
     description:
       'Mailing & Project management for business, cloud based system',
+    cta: 'groupware',
   },
 ]
 

@@ -169,7 +169,7 @@ const Nav = ({ open, setOpen, lang }) => {
           <div
             className={classNames(
               scrollPos > 20 ? 'text-gray-700' : 'text-white',
-              'group inline-flex items-center rounded-md px-3  py-2 text-base font-bold  hover:text-opacity-100 focus:outline-none'
+              'group inline-flex items-center rounded-md px-3  py-2 text-base font-bold hover:text-opacity-100  focus:outline-none lg:text-sm 2xl:text-base'
             )}
           >
             <Link href={'/contact'} locale={locale}>

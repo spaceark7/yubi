@@ -1,116 +1,121 @@
 {
   "hero": {
-    "hero_title": "Ultimate Solution to manage business more efficient",
-    "hero_subtitle": "We‘re providing software for POS, Accounting Management, Inventory Management, ERP, Payroll and many more.",
-    "hero_action_cta": "Learn more",
+    "hero_title": "Solusi Terbaik untuk mengelola bisnis dengan lebih efisien",
+    "hero_subtitle": "Kami menyediakan software untuk POS, Accounting Management, Inventory Management, ERP, Payroll dan masih banyak lagi.",
+    "hero_action_cta": "Pelajari",
     "hero_action_message": "Chat WhatsApp"
   },
   "featured-software": {
-    "Easy POS": {
-      "title": "Easy POS",
-      "brand": "POS",
-      "description": "Point Of Sales desktop app compatible with touchscreen."
-    },
     "Easy A": {
       "title": "Easy A",
+      "cta": "Klik untuk pelajari",
       "brand": "A",
-      "description": "Accounting management desktop app for your financial report."
+      "description": "Aplikasi desktop manajemen akuntansi untuk laporan keuangan Anda."
     },
-
+    "Easy POS": {
+      "title": "Easy POS",
+      "cta": "Klik untuk pelajari",
+      "brand": "POS",
+      "description": "Aplikasi desktop Point Of Sales yang kompatibel dengan layar sentuh."
+    },
     "Easy AI": {
       "title": "Easy AI",
+      "cta": "Klik untuk pelajari",
       "brand": "AI",
-      "description": "Inventory management linked to accounting and customs (Bea Cukai)."
+      "description": "Manajemen persediaan yang terhubung dengan akuntansi dan bea cukai"
     },
     "Easy H": {
       "title": "Easy H",
+      "cta": "Klik untuk pelajari",
       "brand": "H",
-      "description": "Payroll management based on employee attendance using biometric device"
+      "description": "Manajemen penggajian berdasarkan absensi kehadiran menggunakan perangkat biometrik"
     },
     "Easy HR": {
       "title": "Easy HR",
+      "cta": "Klik untuk pelajari",
       "brand": "HR",
-      "description": "Employee management to record all needed data of your employee."
+      "description": "Manajemen karyawan untuk mencatat semua data yang dibutuhkan HRIS."
     },
     "Groupware": {
       "title": "Groupware",
+      "cta": "Klik untuk pelajari",
       "brand": "GR",
-      "description": "Mailing & Project management for business, cloud based system"
+      "description": "Mailing & Manajemen proyek untuk bisnis, sistem berbasis cloud"
     }
   },
   "feature-yubi": {
-    "title": "Why Choose Yubi?",
+    "title": "Kenapa Memilih Yubi?",
     "descriptions": {
       "01": {
         "id": "01",
-        "title": "Customer Support 24/7",
+        "title": "Layanan Pelanggan 24/7",
 
-        "description": "We're always ready to help our customer to solve their problem and give prevention solution."
+        "description": "Kami selalu siap membantu pelanggan kami untuk memecahkan masalah dan memberikan solusi."
       },
       "02": {
         "id": "02",
-        "title": "Easy to Operate",
+        "title": "Mudah Digunakan",
 
-        "description": "Even the hardest thing on real-world job we can make easy by using our software."
+        "description": "Bahkan hal tersulit dalam pekerjaan nyata dapat kami permudah dengan menggunakan perangkat lunak kami."
       },
       "03": {
         "id": "03",
-        "title": "Comprehensive Report",
+        "title": "Laporan Komprehensif",
 
-        "description": "We build every our software with detailed report  to accomodate the need of any business."
+        "description": "Kami membangun setiap perangkat lunak kami dengan laporan terperinci untuk mengakomodasi kebutuhan bisnis apa pun."
       }
     }
   },
   "advanced-solution": {
-    "as-subtitle": "Advanced solution",
+    "as-subtitle": "Solusi Mutakhir",
     "as-title": "ERP Software",
     "as-title-2": "(Enterprise Resource Planning)",
-    "as-description": "For fast paced business such as industry or franchise we provide ERP system that is reliable, faster and efficient.",
+    "as-description": "Untuk bisnis yang serba cepat seperti industri atau franchise kami menyediakan sistem ERP yang handal, cepat dan efisien",
     "S-ERP": {
       "title": "S-ERP",
-      "description": "For Enterprise to manage franchise",
-      "cta": "Learn more"
+      "description": "Untuk Perusahaan mengelola waralaba",
+      "cta": "Pelajari"
     },
     "P-ERP": {
       "title": "P-ERP",
-      "description": "For Industry to manage business",
-      "cta": "Coming soon"
+      "description": "Untuk mengelola industri dan Pabrik",
+      "cta": "Segera hadir"
     }
   },
   "testimony": {
-    "title": "Let‘s hear words from our loyal customer",
+    "title": "Mari kita dengar testimoni dari pelanggan setia kami",
     "collections": {
       "01": {
-        "testimony": "Easy POS help to improve our business very well.",
+        "testimony": "Easy POS membantu meningkatkan bisnis kami dengan sangat baik.",
         "name": "Mr. Park",
-        "owner": "Owner Of Chung Gi Hwa Restaurant"
+        "owner": "Pemilik Restoran Chung Gi Hwa"
       },
       "02": {
-        "testimony": "Our accounting management really improved a lot using Easy A from Yubi.",
+        "testimony": "Manajemen akuntansi kami benar-benar meningkat pesat menggunakan Easy A dari Yubi.",
         "name": "Ms. Hyun",
-        "owner": "Head Of Accounting PT. Space"
+        "owner": "Kepala Bagian Akuntansi PT. Ruang angkasa"
       },
       "03": {
-        "testimony": "Easier to manage inventory everywhere with Easy AI from Yubi",
+        "testimony": "Lebih mudah mengelola inventory dimanapun dengan Easy AI dari Yubi",
         "name": "Mr. Baek Dong",
-        "owner": "Owner of Nesia Factory"
+        "owner": "Pemilik Pabrik Nesia"
       }
     }
   },
   "business-solution": {
-    "title": "Solution to fit for many business variant",
+    "title": "Sesuaikan solusi dengan jenis bisnis anda",
     "resto": "Resto/Retail/Outlet",
-    "logistic": "Logistic/Shipping",
-    "office": "Office Work",
-    "factory": "Factory/Garment"
+    "logistic": "Logistik/Shipping",
+    "office": "Kantoran/Administrasi",
+    "factory": "Pabrik/Garmen"
   },
   "contact": {
-    "title": "Feel free to ask us question",
-    "description": "Don't hesitate to contact if you have any question, we'll help you to solve your problem. No charge just free",
-    "cta": "Contact Us"
+    "title": "Ajukan pertanyaan kepada kami",
+    "description": "Jangan ragu untuk menghubungi jika Anda memiliki pertanyaan, kami akan membantu Anda untuk memecahkan masalah Anda. Tanpa biaya hanya gratis",
+    "cta": "Hubungi kami"
   },
   "CTA": {
-    "title": "Already make decision? Let's try now",
-    "action": "Request Demo"
+    "title": "Sudah menentukan pilihan? Ayo coba sekarang",
+    "action": "Ajukan Demo"
   }
 }
