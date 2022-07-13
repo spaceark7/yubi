@@ -42,17 +42,21 @@ const Nav = ({ open, setOpen, lang }) => {
         )}
       >
         <Link href={'/'}>
-          <div className='relative mr-5 h-fit cursor-pointer p-2'>
+          <div className='relative mr-5 aspect-video h-12 w-24  cursor-pointer p-2'>
             {scrollPos > 20 || open ? (
               <Image
                 className='my-auto w-full'
                 src={LogoBlue}
+                layout='fill'
+                objectFit='contain'
                 alt='yubi tech logo'
               />
             ) : (
               <Image
                 className='my-auto w-full'
                 src={Logo}
+                layout='fill'
+                objectFit='contain'
                 alt='yubi tech logo'
               />
             )}
@@ -190,16 +194,18 @@ const Nav = ({ open, setOpen, lang }) => {
           </NavItem>
         </Popover.Group>
         <div className='ml-2 flex hidden items-center justify-center lg:flex'>
-          <div
-            className={classNames(
-              scrollPos > 20
-                ? 'bg-primaryBrand hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand'
-                : 'bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand',
-              'btn group select-none '
-            )}
-          >
-            Request Demo
-          </div>
+          <Link href={'/contact/#request'}>
+            <div
+              className={classNames(
+                scrollPos > 20
+                  ? 'bg-primaryBrand hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand'
+                  : 'bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand',
+                'btn group select-none '
+              )}
+            >
+              Request Demo
+            </div>
+          </Link>
           <NavLang />
         </div>
 
@@ -350,7 +356,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     onClick={() => setOpen(!open)}
                     className='btn mx-auto block w-full bg-primaryBrand text-center text-xl hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand'
                   >
-                    Request Demo
+                    <Link href={'/contact/#request'}>Request Demo</Link>
                   </div>
                 </div>
               </div>

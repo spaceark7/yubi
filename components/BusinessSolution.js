@@ -7,7 +7,7 @@ import Link from 'next/link'
 const BusinessSolution = () => {
   const { t } = useTranslation('home', { keyPrefix: 'business-solution' })
   return (
-    <div className='relative min-h-[90vh] overflow-hidden bg-slate-200 pt-16 pb-20 lg:py-24'>
+    <section className='relative min-h-[90vh] overflow-hidden bg-slate-200 pt-16 pb-20 lg:py-24'>
       <Layout>
         <div className='px-4 lg:px-12'>
           <div className='max-w-xs'>
@@ -25,30 +25,13 @@ const BusinessSolution = () => {
                   </Link>
                 </li>
               ))}
-
-              {/* <li className='flex items-center hover:cursor-pointer hover:underline'>
-                <ArrowRightIcon className='mr-2 h-8 w-8' />
-                <span className='text-3xl font-bold'> {t('resto')}</span>
-              </li>
-              <li className='flex items-center hover:cursor-pointer hover:underline'>
-                <ArrowRightIcon className='mr-2 h-8 w-8' />
-                <span className='text-3xl font-bold'> {t('logistic')}</span>
-              </li>
-              <li className='flex items-center hover:cursor-pointer hover:underline'>
-                <ArrowRightIcon className='mr-2 h-8 w-8' />
-                <span className='text-3xl font-bold'> {t('office')}</span>
-              </li>
-              <li className='flex items-center hover:cursor-pointer hover:underline'>
-                <ArrowRightIcon className='mr-2 h-8 w-8' />
-                <span className='text-3xl font-bold'> {t('factory')}</span>
-              </li> */}
             </ul>
           </div>
         </div>
       </Layout>
 
       <div className='absolute -right-6 bottom-0 hidden h-[40vh] w-screen bg-business-solution bg-contain  bg-bottom bg-no-repeat opacity-95 sm:block  md:-right-20 md:h-[60vh] md:w-[60vh] lg:right-1 lg:h-[80vh] lg:w-[80vh]'></div>
-    </div>
+    </section>
   )
 }
 

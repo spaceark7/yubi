@@ -219,6 +219,12 @@ const softwares_detail = [
             'Linked data to S-ERP such as Account Payable, Account Receivable, Due date Account Payable, and Customer Balance.',
         },
         {
+          thumbs: '/products/easya/thumbs/one-click.png',
+          title: 'Send Invoice By Email',
+          description:
+            'You can easily send invoice to the customers by email with just one-click.',
+        },
+        {
           thumbs: '/products/easya/thumbs/report.png',
           title: 'Report Feature',
           description:
@@ -518,9 +524,9 @@ const softwares_detail = [
       mobile_image: '/products/groupware/sm_gr@2x.png',
       medium_image: '/products/groupware/md_gr@2x.png',
       is_dark: false,
-      title: 'Maintain the entire team connected',
+      title: 'All in one communication platform',
       description:
-        'Distribute information to the entire team project to keep on track the progress',
+        'Groupware is able distribute mail, task, notice, on going project, resources, asset, and etc to the entire team to keep up to date',
     },
     best_feature: null,
     brief_feature: {
@@ -529,53 +535,90 @@ const softwares_detail = [
           slate: false,
           rtl: false,
           image: '/products/groupware/gr_banner2@2x.png',
-          title: 'Broadcast to internal team for upcoming event',
+          title: 'Broadcast announcement to the entire team',
           description:
-            'Company bulletin will inform all the department for next project',
+            'Board will inform announcement to all the department or to specific department',
         },
       ],
       features: [
         {
-          thumbs: '/products/s-erp/thumbs/dashboard.png',
-          title: 'Master Menu & dashboard',
+          thumbs: '/products/groupware/thumbs/mail.png',
+          title: 'Mail Service',
           description:
-            'Easily manage user access, permission, warehouse, products, customer, company information and more.',
+            'Email service based on cloud that can be accessed from web or mobile apps and linked to Windows Outlook.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/purchase.png',
-          title: 'Purchase Management',
+          thumbs: '/products/groupware/thumbs/calendar.png',
+          title: 'Calendar',
           description:
-            'Easily manage your purchase order, invoice, payment, and more',
+            'Registering schedule of work that can be shared to all users.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/inventory.png',
-          title: 'Inventory Management',
+          thumbs: '/products/groupware/thumbs/task.png',
+          title: 'Task',
           description:
-            'Easily manage your inventory, ingoing, outgoing, stock opname, inventory closing stock, stock card report and more',
+            'Registering daily work that can be shared to all users or directly to supervisor for reporting.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/sales.png',
-          title: 'Order Management',
-          description:
-            'Easily manage your sales order, quotation, status report, and more',
+          thumbs: '/products/groupware/thumbs/todo.png',
+          title: 'To Do',
+          description: 'Creating work plan by supervisor for its team.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/invoice.png',
-          title: 'Sales Management',
-          description:
-            'Easily manage your sales invoice, payment, advance and more',
+          thumbs: '/products/groupware/thumbs/circular.png',
+          title: 'Circular',
+          description: 'Create pole/vote for the entire company.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/accounting.png',
-          title: 'Linked To Accounting',
-          description:
-            'Transfering data from S-ERP to Accounting is easy and fast',
+          thumbs: '/products/groupware/thumbs/hr.png',
+          title: 'Human Resource',
+          description: 'Managing employee data directly in groupware.',
         },
         {
-          thumbs: '/products/s-erp/thumbs/report.png',
-          title: 'Report Management',
+          thumbs: '/products/groupware/thumbs/project.png',
+          title: 'Project',
           description:
-            'Easily manage your daily sales report or monthly sales report, and more',
+            'Initializing project and managing project in groupware.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/archive.png',
+          title: 'Archive',
+          description:
+            'Storage for past activity such as Task, Board & Approval.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/approval.png',
+          title: 'Approval',
+          description: 'Validating menu for supervisor to validate work flow.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/resource.png',
+          title: 'Resource',
+          description:
+            'Initializing project and managing project in groupware.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/assets.png',
+          title: 'Assets',
+          description:
+            'Contact menu that can be syncronized groupware with android or IOS.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/cloud.png',
+          title: 'Cloud Disk',
+          description:
+            'Managing document and file in company based on cloud that linked to Groupware.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/expense.png',
+          title: 'Expense',
+          description: 'For managing company expenses and planning cost.',
+        },
+        {
+          thumbs: '/products/groupware/thumbs/chat.png',
+          title: 'Whisper/Chat',
+          description:
+            'An internal messenger apps that accesed from web or mobile apps.',
         },
       ],
     },
@@ -583,8 +626,8 @@ const softwares_detail = [
       {
         slate: true,
         rtl: true,
-        image: '/products/groupware/gr_banner1@2x.png',
-        title: 'Watching project progress with shared email',
+        image: '/products/groupware/banner_1.webp',
+        title: 'Keep up-to-date on project progress with shared email',
         description:
           'Avoid miscommunication between team and handling task on demand.',
       },
@@ -592,10 +635,9 @@ const softwares_detail = [
       {
         slate: false,
         rtl: false,
-        image: '/products/easyai/mock-easyai_1@2x.png',
-        title: 'Built in ledger for accounting',
-        description:
-          'Every transaction is registered on ledger book to ease on auditing.',
+        image: '/products/groupware/banner_2.webp',
+        title: 'Integrate with Microsoft Windows Outlook',
+        description: 'You can access groupware email using microsoft outlook.',
       },
     ],
     testimonial: true,
@@ -662,6 +704,12 @@ const softwares_detail = [
           title: 'Linked To Accounting',
           description:
             'Transfering data from S-ERP to Accounting is easy and fast',
+        },
+        {
+          thumbs: '/products/s-erp/thumbs/pos.png',
+          title: 'Get Sales Order from POS',
+          description:
+            'Easy POS sales order will be linked to S-ERP, Perfeclty manage your branches.',
         },
         {
           thumbs: '/products/s-erp/thumbs/report.png',

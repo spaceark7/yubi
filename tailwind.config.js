@@ -18,9 +18,11 @@ module.exports = {
       },
       screens: {
         sm: '390px',
+        '3xl': '1600px',
+        '2K': '1980px',
       },
       backgroundImage: {
-        'business-solution': 'url(/customers/business_solution_bg@2x.png)',
+        'business-solution': 'url(/customers/business_solution_bg.webp)',
       },
     },
   },

@@ -14,7 +14,7 @@ const NavLang = ({ lang }) => {
   const [selected, setSelected] = useState(locale)
   return (
     <Listbox value={selected} onChange={setSelected}>
-      <div className='relative mt-1 ml-2'>
+      <div onMouseLeave={() => setIsShowing(false)} className='relative ml-2 '>
         <Listbox.Button
           onMouseEnter={() => setIsShowing(true)}
           className={classNames(
@@ -39,7 +39,7 @@ const NavLang = ({ lang }) => {
         >
           <Listbox.Options
             onMouseLeave={() => setIsShowing(false)}
-            className='absolute mt-1 h-fit w-fit overflow-auto rounded-md bg-white px-4 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
+            className='absolute -mt-2 h-fit w-fit overflow-auto rounded-md bg-white px-4 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm'
           >
             {locales.map((item, index) => (
               <Listbox.Option
@@ -57,7 +57,7 @@ const NavLang = ({ lang }) => {
                       selected ? 'text-primaryBrand' : 'text-gray-900'
                     }`}
                   >
-                    <Link href={router.asPath} locale={item}>
+                    <Link scroll={false} href={router.asPath} locale={item}>
                       {item.toUpperCase() === 'EN'
                         ? 'English'
                         : item.toUpperCase() === 'ID'

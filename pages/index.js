@@ -34,7 +34,7 @@ export default function Home() {
         {/* Hero */}
         <section className='relative  h-[95vh] overflow-hidden md:h-screen'>
           <div className='mx-auto max-w-screen-lg px-8 pt-24 md:px-10 md:pt-28 xl:max-w-screen-md 2xl:max-w-screen-xl '>
-            <h1 className='mb-6 text-2xl font-bold text-white md:text-center md:text-5xl lg:mx-auto lg:max-w-3xl lg:text-4xl 2xl:max-w-screen-2xl 2xl:px-32 2xl:px-20 2xl:text-6xl'>
+            <h1 className='mb-6 text-2xl font-bold text-white sm:text-4xl md:text-center md:text-5xl lg:mx-auto lg:max-w-3xl lg:text-4xl 2xl:max-w-screen-2xl 2xl:px-32 2xl:px-20 2xl:text-6xl'>
               {t('hero.hero_title')}
             </h1>
             <p className='mx-auto text-white  md:max-w-xl md:text-center'>
@@ -65,6 +65,7 @@ export default function Home() {
           <div className='absolute bottom-0 -z-10 mx-auto w-screen '>
             <div className='large-mobile:translate-x-1 relative mx-auto w-[45vh] translate-x-0 overflow-hidden opacity-90 sm:w-[50vh] md:w-[60vh] 2xl:w-[80vh]  '>
               <Image
+                priority={true}
                 className='ml-12 w-full'
                 layout='responsive'
                 src={HeroMain}

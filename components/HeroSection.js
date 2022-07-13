@@ -2,6 +2,7 @@ import Layout from './Layout'
 import SliderCustomer from './SliderCustomer'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const HeroSection = ({ customers, data }) => {
   const router = useRouter()
@@ -10,7 +11,7 @@ const HeroSection = ({ customers, data }) => {
   )
 
   return (
-    <div className='z-0 overflow-x-hidden'>
+    <section className='z-0 overflow-x-hidden'>
       <div className='relative z-0 min-h-screen overflow-x-hidden pt-28 sm:pt-24 md:pt-32 xl:pt-10'>
         <Layout>
           <div className='h-[75vh] md:h-[70vh] lg:px-10 xl:h-[75vh] 2xl:h-[80vh]'>
@@ -26,19 +27,22 @@ const HeroSection = ({ customers, data }) => {
                 {data?.description}
               </p>
               {data?.disable_slider ? null : (
-                <div
-                  className={`${
-                    !data.is_dark
-                      ? 'btn mt-12 bg-primaryBrand hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand 2xl:text-xl'
-                      : 'btn mt-12 bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand 2xl:text-xl'
-                  } lg:px-6`}
-                >
-                  {data.description.includes('P-ERP')
-                    ? 'Coming soon'
-                    : data.disable_slider
-                    ? 'See hardware'
-                    : 'Request Demo'}
-                </div>
+                <Link href='/contact/#request'>
+                  <div
+                    className={`${
+                      !data.is_dark
+                        ? 'btn mt-12 bg-primaryBrand hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand 2xl:text-xl'
+                        : 'btn mt-12 bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand 2xl:text-xl'
+                    } lg:px-6`}
+                  >
+                    {' '}
+                    {data.description.includes('P-ERP')
+                      ? 'Coming soon'
+                      : data.disable_slider
+                      ? 'See hardware'
+                      : 'Request Demo'}
+                  </div>
+                </Link>
               )}
 
               <div className='flex flex-col lg:flex-row '>
@@ -86,6 +90,7 @@ const HeroSection = ({ customers, data }) => {
           >
             <Image
               src={data.image}
+              priority={true}
               alt='pos devices hero'
               layout='fill'
               objectFit='cover'
@@ -103,6 +108,7 @@ const HeroSection = ({ customers, data }) => {
               src={data.medium_image}
               alt='pos devices hero'
               layout='fill'
+              priority={true}
               objectFit='cover'
             />
           </div>
@@ -118,12 +124,13 @@ const HeroSection = ({ customers, data }) => {
               src={data.mobile_image}
               alt='pos devices hero'
               layout='fill'
+              priority={true}
               objectFit='cover'
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

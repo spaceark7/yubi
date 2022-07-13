@@ -15,7 +15,7 @@ const NavItem = ({ title, children }) => {
             onMouseEnter={() => setIsShowing(true)}
             className={classNames(
               scrollPos > 20 ? 'text-gray-800' : 'text-white',
-              'group flex w-fit items-center rounded-md px-3 py-2 text-base font-bold  hover:text-opacity-100 focus:outline-none'
+              'group flex w-fit items-center rounded-md px-3 py-2 text-base font-bold hover:text-opacity-100 focus:outline-none lg:text-sm'
             )}
           >
             <span>{title}</span>
@@ -35,11 +35,14 @@ const NavItem = ({ title, children }) => {
             leaveFrom='opacity-100 translate-y-0'
             leaveTo='opacity-0 translate-y-5'
           >
-            <Popover.Panel className='absolute left-0 z-10  min-w-max max-w-xs  sm:px-0 lg:max-w-3xl'>
+            <Popover.Panel
+              static
+              className='absolute left-0 z-10  min-w-max max-w-xs  sm:px-0 lg:max-w-3xl'
+            >
               <div className='w-fit max-w-lg overflow-hidden rounded-xl shadow-xl ring-1 ring-gray-500 ring-opacity-30'>
                 <div
                   onClick={() => setIsShowing(false)}
-                  className='relative grid gap-x-10 bg-white px-12 py-8  lg:grid-flow-col'
+                  className='relative grid gap-x-10 bg-white px-12 py-8 lg:grid-flow-col lg:text-sm'
                 >
                   {children}
                 </div>
