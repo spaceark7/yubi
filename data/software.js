@@ -23,20 +23,19 @@ const software = [
   },
   {
     id: 4,
-    title: 'Easy H',
+    title: 'Easy H & HR',
     brand: 'H',
-    description:
-      'Payroll management based on employee attendant using biometric device',
+    description: 'Payroll and employee management',
 
     cta: 'easy-h',
   },
   {
     id: 5,
-    title: 'Easy HR',
-    brand: 'HR',
+    title: 'ERP System',
+    brand: 'ERP',
     description:
-      'Employee management to record all needed data of your employee.',
-    cta: 'easy-hr',
+      'Mailing & Project management for business, cloud based system',
+    cta: 's-erp',
   },
   {
     id: 6,
@@ -107,6 +106,7 @@ const softwares_detail = [
     name: 'Easy POS',
     localesId: 'easy-pos',
     brand: 'POS',
+    desc: 'Point Of Sales Software',
     hero_section: {
       is_dark: true,
       image: '/products/easypos/bg-pos@2x.png',
@@ -173,6 +173,7 @@ const softwares_detail = [
     name: 'Easy A',
     localesId: 'easy-a',
     brand: 'A',
+    desc: 'Accounting management software.',
     hero_section: {
       is_dark: false,
       image: '/products/easya/accounting@2x.png',
@@ -263,7 +264,8 @@ const softwares_detail = [
     id: '3',
     name: 'Easy AI',
     localesId: 'easy-ai',
-    brand: 'A',
+    brand: 'AI',
+    desc: 'Inventory management & Accounting Software.',
     hero_section: {
       is_dark: false,
       image: '/products/easyai/accounting2@2x.png',
@@ -356,9 +358,10 @@ const softwares_detail = [
 
   {
     id: '4',
-    name: 'Easy H',
+    name: 'Easy H & HR',
     localesId: 'easy-h',
     brand: 'H',
+    desc: 'Payroll & Employee Management.',
     hero_section: {
       is_dark: false,
       image: '/products/easyh/payroll@2x.png',
@@ -449,83 +452,84 @@ const softwares_detail = [
     ],
     testimonial: true,
   },
-  {
-    id: '5',
-    name: 'Easy HR',
-    localesId: 'easy-hr',
-    brand: 'HR',
-    hero_section: {
-      is_dark: false,
-      image: '/products/easyhr/hr@2x.png',
-      mobile_image: '/products/easyhr/sm_hr@2x.png',
-      medium_image: '/products/easyhr/md_hr@2x.png',
-      title: 'Simplify employee management',
-      description:
-        'Collecting employee data to see their history, perfomance and experience is getting easier',
-    },
-    best_feature: null,
-    brief_feature: {
-      purpose: [
-        {
-          slate: false,
-          rtl: true,
-          image: '/products/easyhr/hr_1@2x.png',
-          title: 'Evaluating employee with complete data',
-          description:
-            'It will help you to decide which action to take for company growth.',
-        },
-      ],
-      features: [
-        {
-          thumbs: '/products/easyhr/thumbs/personal_1.png',
-          title: 'Personal Basic Info',
-          description:
-            'Complete record of employee data include family member, medical, training, academic, and reward/warning.',
-        },
-        {
-          thumbs: '/products/easyhr/thumbs/users.png',
-          title: 'Unlimited User Registration',
-          description:
-            'You are freely add or remove as much user as you want, and you can manage them with ease.',
-        },
-        {
-          thumbs: '/products/easyhr/thumbs/org.png',
-          title: 'Organization Management',
-          description:
-            'Manage your company structure and employee per departmenet structure.',
-        },
-        {
-          thumbs: '/products/easyhr/thumbs/reward.png',
-          title: 'Giving reward or warning in app',
-          description:
-            'No need to write a note, just give a reward or warning using out Reward/Warn Feature.',
-        },
-        {
-          thumbs: '/products/easyhr/thumbs/cv.png',
-          title: 'Personal Curriculum Vitae',
-          description:
-            'With this feature, you can see your personal curriculum vitae in one comprehensive report.',
-        },
-      ],
-    },
-    banner: [
-      {
-        slate: false,
-        rtl: true,
-        image: '/products/easyhr/easyh_ss.png',
-        title: 'Manage payroll with Easy H',
-        description:
-          'Automatically calculate salary based on employee attendance.',
-        cta: 'easy-h',
-      },
-    ],
-    testimonial: true,
-  },
+  // {
+  //   id: '5',
+  //   name: 'Easy HR',
+  //   localesId: 'easy-hr',
+  //   brand: 'HR',
+  //   hero_section: {
+  //     is_dark: false,
+  //     image: '/products/easyhr/hr@2x.png',
+  //     mobile_image: '/products/easyhr/sm_hr@2x.png',
+  //     medium_image: '/products/easyhr/md_hr@2x.png',
+  //     title: 'Simplify employee management',
+  //     description:
+  //       'Collecting employee data to see their history, perfomance and experience is getting easier',
+  //   },
+  //   best_feature: null,
+  //   brief_feature: {
+  //     purpose: [
+  //       {
+  //         slate: false,
+  //         rtl: true,
+  //         image: '/products/easyhr/hr_1@2x.png',
+  //         title: 'Evaluating employee with complete data',
+  //         description:
+  //           'It will help you to decide which action to take for company growth.',
+  //       },
+  //     ],
+  //     features: [
+  //       {
+  //         thumbs: '/products/easyhr/thumbs/personal_1.png',
+  //         title: 'Personal Basic Info',
+  //         description:
+  //           'Complete record of employee data include family member, medical, training, academic, and reward/warning.',
+  //       },
+  //       {
+  //         thumbs: '/products/easyhr/thumbs/users.png',
+  //         title: 'Unlimited User Registration',
+  //         description:
+  //           'You are freely add or remove as much user as you want, and you can manage them with ease.',
+  //       },
+  //       {
+  //         thumbs: '/products/easyhr/thumbs/org.png',
+  //         title: 'Organization Management',
+  //         description:
+  //           'Manage your company structure and employee per departmenet structure.',
+  //       },
+  //       {
+  //         thumbs: '/products/easyhr/thumbs/reward.png',
+  //         title: 'Giving reward or warning in app',
+  //         description:
+  //           'No need to write a note, just give a reward or warning using out Reward/Warn Feature.',
+  //       },
+  //       {
+  //         thumbs: '/products/easyhr/thumbs/cv.png',
+  //         title: 'Personal Curriculum Vitae',
+  //         description:
+  //           'With this feature, you can see your personal curriculum vitae in one comprehensive report.',
+  //       },
+  //     ],
+  //   },
+  //   banner: [
+  //     {
+  //       slate: false,
+  //       rtl: true,
+  //       image: '/products/easyhr/easyh_ss.png',
+  //       title: 'Manage payroll with Easy H',
+  //       description:
+  //         'Automatically calculate salary based on employee attendance.',
+  //       cta: 'easy-h',
+  //     },
+  //   ],
+  //   testimonial: true,
+  // },
   {
     id: '6',
     name: 'Groupware',
     localesId: 'groupware',
     brand: 'GR',
+    desc: 'Mailing & Project management software',
     hero_section: {
       image: '/products/groupware/gr@2x.png',
       mobile_image: '/products/groupware/sm_gr@2x.png',
@@ -654,6 +658,7 @@ const softwares_detail = [
     name: 'S-ERP',
     localesId: 's-erp',
     brand: 'S-ERP',
+    desc: 'ERP software for manage enterprise',
     hero_section: {
       image: '/products/s-erp/s-erp.png',
       mobile_image: '/products/s-erp/sm_s-erp.png',
@@ -756,44 +761,84 @@ const softwares_detail = [
     ],
     testimonial: false,
   },
-  {
-    id: '8',
-    name: 'P-ERP',
-    localesId: 'p-erp',
-    brand: 'P-ERP',
-    hero_section: {
-      image: '/products/p-erp/p-erp.png',
-      mobile_image: '/products/p-erp/sm_p-erp.png',
-      medium_image: '/products/p-erp/md_p-erp.png',
-      is_dark: false,
-      title: 'For Industry handling manufacturing process',
-      description:
-        'P-ERP is a solution for industry to manage manufacturing resources.',
-    },
-    best_feature: null,
-    brief_feature: null,
-    banner: null,
-    testimonial: false,
-  },
+  // {
+  //   id: '8',
+  //   name: 'P-ERP',
+  //   localesId: 'p-erp',
+  //   brand: 'P-ERP',
+  //   hero_section: {
+  //     image: '/products/p-erp/p-erp.png',
+  //     mobile_image: '/products/p-erp/sm_p-erp.png',
+  //     medium_image: '/products/p-erp/md_p-erp.png',
+  //     is_dark: false,
+  //     title: 'For Industry handling manufacturing process',
+  //     description:
+  //       'P-ERP is a solution for industry to manage manufacturing resources.',
+  //   },
+  //   best_feature: null,
+  //   brief_feature: null,
+  //   banner: null,
+  //   testimonial: false,
+  // },
 ]
 
 const hardware = [
   {
-    category: 'Communication & Security',
+    category: 'Security Solution',
     products: [
       {
         id: '1',
-        name: 'Surveillance Camera (CCTV)',
+        name: 'CCTV camera & Access Control',
         localesId: 'cctv',
-
         hero_section: {
           image: '/products/hardware/cctv/cctv_hero.webp',
           mobile_image: '/products/hardware/cctv/sm_cctv_hero.webp',
           medium_image: '/products/hardware/cctv/md_cctv_hero.webp',
           is_dark: true,
+          cta: 'Learn More',
           disable_slider: true,
-          title: 'Security Camera for monitoring',
-          description: 'You can always monitoring anywhere, anytime.',
+          title: 'Security Camera & Access Control',
+          description:
+            'Improve security and optimize operational awareness, We provide CCTV configuration & Access control solutions.',
+        },
+        solution_section: {
+          title: 'Our proven strategy ',
+          description:
+            'We have a proven strategy to ensure the highest security and efficiency',
+          list: [
+            {
+              id: '1',
+              title: 'Step 1',
+              description: 'Analyzing Environment',
+              content:
+                'The survey process in the field to ensure the installation path and make a wiring layout and estimate the use of materials.',
+              image: '/products/hardware/cctv/step1.png',
+            },
+            {
+              id: '2',
+              title: 'Step 2',
+              description: 'Planning',
+              content:
+                'Process to ensure material usage ,budgeting and scheduling. Then we will inform quotation & pricing.',
+              image: '/products/hardware/cctv/step2.png',
+            },
+            {
+              id: '3',
+              title: 'Step 3',
+              description: 'Installation',
+              content:
+                'The installation process in the field with reference to the plans and quotation that have been approved in the previous process.',
+              image: '/products/hardware/cctv/step3.png',
+            },
+            {
+              id: '4',
+              title: 'Step 4',
+              description: 'Maintenance',
+              content:
+                'To ensure all the system is working properly, we are offering optional service for maintenance reguarly or call base.',
+              image: '/products/hardware/cctv/step4.png',
+            },
+          ],
         },
         hardware_section: {
           title: 'We are providing the best hardware for optimal output',
@@ -873,65 +918,65 @@ const hardware = [
           ],
         },
       },
-      {
-        id: '3',
-        name: 'Office Telephone PABX',
-        localesId: 'office-pabx',
-        hero_section: {
-          image: '/products/hardware/pabx/pabx_hero.webp',
-          mobile_image: '/products/hardware/pabx/sm_pabx_hero.webp',
-          medium_image: '/products/hardware/pabx/md_pabx_hero.webp',
-          is_dark: true,
-          disable_slider: true,
-          title: 'Digital & IP telephone & PABX for office work',
-          description: 'Connecting your office is easy with PABX and telephone',
-        },
-        hardware_section: {
-          title: 'Analog and Digital telephone with PABX',
-          list_product: [
-            {
-              image: '/products/hardware/pabx/1.webp',
-              name: 'Yealink Digital & IP phone',
-            },
-            {
-              image: '/products/hardware/pabx/2.webp',
-              name: 'Yealink Digital & IP phone SP Series',
-            },
-            {
-              image: '/products/hardware/pabx/3.webp',
-              name: 'Yealink Digital & IP phone compact',
-            },
-            {
-              image: '/products/hardware/pabx/7.webp',
-              name: 'NEC Analog phone ATH Series',
-            },
-            {
-              image: '/products/hardware/pabx/8.webp',
-              name: 'NEC Analog phone DTH Series',
-            },
-            {
-              image: '/products/hardware/pabx/4.webp',
-              name: 'Yeastar PABX P-SERIES standard',
-            },
-            {
-              image: '/products/hardware/pabx/5.webp',
-              name: 'Yeastar PABX P-SERIES medium',
-            },
-            {
-              image: '/products/hardware/pabx/6.webp',
-              name: 'Yeastar PABX P-SERIES corporate',
-            },
-          ],
-        },
-      },
+      // {
+      //   id: '3',
+      //   name: 'Office Telephone PABX',
+      //   localesId: 'office-pabx',
+      //   hero_section: {
+      //     image: '/products/hardware/pabx/pabx_hero.webp',
+      //     mobile_image: '/products/hardware/pabx/sm_pabx_hero.webp',
+      //     medium_image: '/products/hardware/pabx/md_pabx_hero.webp',
+      //     is_dark: true,
+      //     disable_slider: true,
+      //     title: 'Digital & IP telephone & PABX for office work',
+      //     description: 'Connecting your office is easy with PABX and telephone',
+      //   },
+      //   hardware_section: {
+      //     title: 'Analog and Digital telephone with PABX',
+      //     list_product: [
+      //       {
+      //         image: '/products/hardware/pabx/1.webp',
+      //         name: 'Yealink Digital & IP phone',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/2.webp',
+      //         name: 'Yealink Digital & IP phone SP Series',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/3.webp',
+      //         name: 'Yealink Digital & IP phone compact',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/7.webp',
+      //         name: 'NEC Analog phone ATH Series',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/8.webp',
+      //         name: 'NEC Analog phone DTH Series',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/4.webp',
+      //         name: 'Yeastar PABX P-SERIES standard',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/5.webp',
+      //         name: 'Yeastar PABX P-SERIES medium',
+      //       },
+      //       {
+      //         image: '/products/hardware/pabx/6.webp',
+      //         name: 'Yeastar PABX P-SERIES corporate',
+      //       },
+      //     ],
+      //   },
+      // },
     ],
   },
   {
-    category: 'PC Hardware & Network',
+    category: 'Network & Communication',
     products: [
       {
         id: '4',
-        name: 'Point of Sales Hardware',
+        name: 'Network Installation & Telephone',
         localesId: 'pos-hardware-peripheral',
         hero_section: {
           image: '/products/hardware/pos/pos_hero.webp',
@@ -996,9 +1041,14 @@ const hardware = [
           ],
         },
       },
+    ],
+  },
+  {
+    category: 'Server & PC Solution',
+    products: [
       {
         id: '5',
-        name: 'Desktop & Server Computer',
+        name: 'Server & Desktop Computer',
         localesId: 'server-desktop-computer',
         hero_section: {
           image: '/products/hardware/server/server_hero.webp',

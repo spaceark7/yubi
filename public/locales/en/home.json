@@ -8,38 +8,39 @@
   "featured-software": {
     "Easy POS": {
       "title": "Easy POS",
-      "cta": "Click to learn more",
+      "cta": "learn more",
       "brand": "POS",
       "description": "Point Of Sales desktop app compatible with touchscreen."
     },
     "Easy A": {
       "title": "Easy A",
-      "cta": "Click to learn more",
+      "cta": "learn more",
       "brand": "A",
       "description": "Accounting management desktop app for your financial report."
     },
 
     "Easy AI": {
       "title": "Easy AI",
-      "cta": "Click to learn more",
+      "cta": "learn more",
       "brand": "AI",
       "description": "Inventory management linked to accounting and customs (Bea Cukai)."
     },
-    "Easy H": {
-      "title": "Easy H",
-      "cta": "Click to learn more",
+    "Easy H & HR": {
+      "title": "Easy H & HR",
+      "cta": "learn more",
       "brand": "H",
-      "description": "Payroll management based on employee attendance using biometric device"
+      "description": "Payroll & employee management desktop app for your business."
     },
-    "Easy HR": {
-      "title": "Easy HR",
-      "cta": "Click to learn more",
-      "brand": "HR",
-      "description": "Employee management to record all needed data of your employee."
+
+    "ERP System": {
+      "title": "ERP System",
+      "cta": "learn more",
+      "brand": "ERP",
+      "description": "Enterprise Resource Planning (ERP) system for your business."
     },
     "Groupware": {
       "title": "Groupware",
-      "cta": "Click to learn more",
+      "cta": "learn more",
       "brand": "GR",
       "description": "Mailing & Project management for business, cloud based system"
     }

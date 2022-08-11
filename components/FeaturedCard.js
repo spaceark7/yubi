@@ -9,7 +9,7 @@ const FeaturedCard = ({ data, useImage }) => {
   })
 
   return data?.cta ? (
-    <Link href={`/services/${data.cta}`}>
+    <Link href={`/products/${data.cta}`}>
       <div className='group flex h-fit w-full cursor-pointer select-none space-x-4 rounded-xl p-2 hover:bg-slate-200 md:w-fit md:p-4'>
         {useImage ? (
           <div
@@ -38,10 +38,10 @@ const FeaturedCard = ({ data, useImage }) => {
 
         <div className='w-3/4'>
           <div className='flex space-x-3'>
-            <h2 className='pl-3 text-lg font-bold '> {t('title')}</h2>
-            <h2 className='-translate-y-2 rounded-full  bg-primaryBrand/5 px-3 py-1 pl-3 text-sm font-medium text-primaryBrand opacity-0 transition duration-300 ease-in-out group-hover:-translate-y-0 group-hover:opacity-100'>
+            <span className='pl-3 text-lg font-bold '>{t('title')}</span>
+            <span className='-translate-y-2 rounded-full  bg-primaryBrand/5 px-3 py-1 pl-3 font-medium text-primaryBrand opacity-0 transition duration-300 ease-in-out group-hover:-translate-y-0 group-hover:opacity-100 lg:text-sm'>
               {t('cta')}
-            </h2>
+            </span>
           </div>
           <p className='pl-3 text-base text-sm md:text-sm lg:text-base '>
             {t('description')}

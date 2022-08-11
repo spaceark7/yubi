@@ -37,9 +37,9 @@ const NavItem = ({ title, children }) => {
           >
             <Popover.Panel
               static
-              className='absolute left-0 z-10  min-w-max max-w-xs  sm:px-0 lg:max-w-3xl'
+              className='absolute left-0 z-10  min-w-max max-w-xs sm:px-0 lg:max-w-3xl xl:max-w-4xl'
             >
-              <div className='w-fit max-w-lg overflow-hidden rounded-xl shadow-xl ring-1 ring-gray-500 ring-opacity-30'>
+              <div className='w-full max-w-xl overflow-hidden rounded-xl shadow-xl ring-1 ring-gray-500 ring-opacity-30 xl:max-w-4xl'>
                 <div
                   onClick={() => setIsShowing(false)}
                   className='relative grid gap-x-10 bg-white px-12 py-8 lg:grid-flow-col lg:text-sm'

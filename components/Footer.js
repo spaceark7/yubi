@@ -12,11 +12,14 @@ import Link from 'next/link'
 import { solutions } from '../data/businessSolutions'
 import { useRouter } from 'next/router'
 import more_info from '../data/moreInfo'
+import { BsWhatsapp } from 'react-icons/bs'
 
 const Footer = () => {
   const { locale } = useRouter()
+
   let paths = []
   hardware.map((item) => item.products.map((product) => paths.push(product)))
+
   return (
     <div className='z-20 w-full bg-[#003766] transition duration-300 ease-in-out'>
       <Layout>
@@ -33,51 +36,46 @@ const Footer = () => {
           <div className='flex flex-grow flex-col flex-wrap lg:flex-row lg:justify-between '>
             {/* small screen */}
             <div className='mt-8 text-white lg:hidden'>
-              <NavItemMobile title={'Services'}>
+              <NavItemMobile title={'Products'}>
                 <div className=' pr-4 '>
                   <h1 className='mb-2 font-bold text-gray-400'>
-                    Resto/Office/Business
+                    Software Solution
                   </h1>
-                  {softwares_detail
-                    .filter(
-                      (value) =>
-                        value.name !== 'S-ERP' && value.name !== 'P-ERP'
-                    )
-                    .map((x) => (
-                      <Link
-                        key={x.id}
-                        href={`/services/${x.localesId}`}
-                        locale={locale}
-                      >
-                        <div className='mb-2 font-bold text-white hover:cursor-pointer hover:underline'>
-                          {x.name}
-                        </div>
-                      </Link>
-                    ))}
+                  {softwares_detail.map((x) => (
+                    <Link
+                      key={x.id}
+                      href={`/services/${x.localesId}`}
+                      locale={locale}
+                    >
+                      <div className='mb-2 font-bold text-white hover:cursor-pointer hover:underline'>
+                        {x.name}
+                      </div>
+                    </Link>
+                  ))}
                 </div>
                 <div className='mt-6'>
-                  <h1 className='mb-2 font-bold text-gray-400'>
-                    Enterprise/Franchise/Industry
-                  </h1>
-                  {softwares_detail
-                    .filter(
-                      (value) =>
-                        value.name === 'S-ERP' || value.name === 'P-ERP'
-                    )
-                    .map((x) => (
-                      <Link
-                        key={x.id}
-                        href={`/services/${x.localesId}`}
-                        locale={locale}
-                      >
-                        <div className='mb-2 font-bold text-white hover:cursor-pointer hover:underline'>
-                          {x.name}
-                        </div>
-                      </Link>
-                    ))}
+                  {hardware.map((item) => (
+                    <div key={item} className='py-2 pr-4'>
+                      <h1 className='mb-2 font-bold text-gray-400'>
+                        {item.category}
+                      </h1>
+
+                      {item.products.map((menu) => (
+                        <Link
+                          key={menu.id}
+                          href={`/hardware/${menu.localesId}`}
+                          locale={locale}
+                        >
+                          <div className='mb-2 font-bold text-white hover:cursor-pointer hover:underline'>
+                            {menu.name}
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
                 </div>
               </NavItemMobile>
-              <NavItemMobile title={'Hardware'}>
+              {/* <NavItemMobile title={'Hardware'}>
                 {hardware.map((item) => (
                   <div key={item} className='py-2 pr-4'>
                     <h1 className='mb-2 font-bold text-gray-400'>
@@ -97,7 +95,7 @@ const Footer = () => {
                     ))}
                   </div>
                 ))}
-              </NavItemMobile>
+              </NavItemMobile> */}
               <NavItemMobile title={'Business Solution'}>
                 {solutions.map((menu) => (
                   <Link
@@ -105,7 +103,7 @@ const Footer = () => {
                     href={`/solutions/${menu.localesId}`}
                     locale={locale}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                    <div className='mb-2 font-bold text-white hover:cursor-pointer hover:underline'>
                       {menu.name}
                     </div>
                   </Link>
@@ -153,6 +151,19 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
+                      className='inline-flex items-center'
+                      href={`https://wa.me/+6281290049231?text=${encodeURI(
+                        'Halo, saya tertarik dengan produk Yubi Technology'
+                      )}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <BsWhatsapp className='h-5 w-5' />
+                      <span className='ml-5'>0812 9004 9231</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       target='__blank'
                       href='mailto:cs@yubiteck.com'
                       className='flex items-center'
@@ -167,21 +178,21 @@ const Footer = () => {
 
             {/* Bigger Screen */}
             <div className='hidden max-w-xl p-4 text-white lg:block'>
-              <h1 className='mb-2 text-xl font-bold'>Services</h1>
+              <h1 className='mb-2 text-xl font-bold'>Products</h1>
               <ul>
                 {softwares_detail.map((x) => (
                   <li
                     className='mb-2  text-white hover:cursor-pointer hover:underline'
                     key={x.id}
                   >
-                    <Link href={`/services/${x.localesId}`}>{x.name}</Link>
+                    <Link href={`/products/${x.localesId}`}>{x.name}</Link>
                   </li>
                 ))}
               </ul>
             </div>
             <div className='hidden max-w-xl p-4 text-white lg:block'>
-              <h1 className='mb-2 text-xl font-bold'>Hardware</h1>
-              <ul className='space-y-2 text-sm text-opacity-75'>
+              <h1 className='mb-2 text-xl font-bold'>Hardware Solution</h1>
+              <ul className='space-y-2 text-opacity-75'>
                 {paths.map((menu) => (
                   <li
                     className='mb-2 text-white hover:cursor-pointer hover:underline'
@@ -196,7 +207,7 @@ const Footer = () => {
             </div>
             <div className='hidden max-w-xl p-4 text-white lg:block'>
               <h1 className='mb-2 text-xl font-bold'>Business Solution</h1>
-              <ul className='space-y-2 text-sm text-opacity-75'>
+              <ul className='space-y-2 text-opacity-75'>
                 {solutions.map((menu) => (
                   <li
                     className='mb-2 text-white hover:cursor-pointer hover:underline'
@@ -225,13 +236,24 @@ const Footer = () => {
                     </p>
                   </a>
                 </li>
-                <li className='flex items-center'>
+                <li className='flex items-center space-x-6'>
                   <a
                     className='inline-flex items-center'
                     href='tel:+6222452092'
                   >
                     <PhoneIcon className='mr-2 h-5 w-5' />
                     <span>021 - 22452092/93</span>
+                  </a>
+                  <a
+                    className='inline-flex items-center'
+                    href={`https://wa.me/+6281290049231?text=${encodeURI(
+                      'Halo, saya tertarik dengan produk Yubi Technology'
+                    )}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <BsWhatsapp className='mr-2 h-5 w-5' />
+                    <span>0812 9004 9231</span>
                   </a>
                 </li>
                 <li className='flex items-center'>

@@ -26,6 +26,14 @@ const HeroSection = ({ customers, data }) => {
               <p className='mt-6 text-xl opacity-95 sm:max-w-md lg:text-base 2xl:max-w-xl 2xl:text-xl'>
                 {data?.description}
               </p>
+              {data?.cta && (
+                <a
+                  href='#description'
+                  className='btn-outline large-mobile:text-base mt-12 border-white text-sm  hover:bg-white hover:text-gray-600 lg:text-lg'
+                >
+                  {data.cta}
+                </a>
+              )}
               {data?.disable_slider ? null : (
                 <Link href='/contact/#request'>
                   <div

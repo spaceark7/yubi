@@ -8,37 +8,37 @@
   "featured-software": {
     "Easy A": {
       "title": "Easy A",
-      "cta": "Klik untuk pelajari",
+      "cta": "Pelajari",
       "brand": "A",
       "description": "Aplikasi desktop manajemen akuntansi untuk laporan keuangan Anda."
     },
     "Easy POS": {
       "title": "Easy POS",
-      "cta": "Klik untuk pelajari",
+      "cta": "Pelajari",
       "brand": "POS",
       "description": "Aplikasi desktop Point Of Sales yang kompatibel dengan layar sentuh."
     },
     "Easy AI": {
       "title": "Easy AI",
-      "cta": "Klik untuk pelajari",
+      "cta": "Pelajari",
       "brand": "AI",
       "description": "Manajemen persediaan yang terhubung dengan akuntansi dan bea cukai"
     },
     "Easy H": {
       "title": "Easy H",
-      "cta": "Klik untuk pelajari",
+      "cta": "Pelajari",
       "brand": "H",
       "description": "Manajemen penggajian berdasarkan absensi kehadiran menggunakan perangkat biometrik"
     },
-    "Easy HR": {
-      "title": "Easy HR",
-      "cta": "Klik untuk pelajari",
-      "brand": "HR",
-      "description": "Manajemen karyawan untuk mencatat semua data yang dibutuhkan HRIS."
+    "ERP System": {
+      "title": "ERP System",
+      "cta": "Pelajari",
+      "brand": "ERP",
+      "description": "Sistem untuk mengelola aktifitas bisnis perusahaan."
     },
     "Groupware": {
       "title": "Groupware",
-      "cta": "Klik untuk pelajari",
+      "cta": "Pelajari",
       "brand": "GR",
       "description": "Mailing & Manajemen proyek untuk bisnis, sistem berbasis cloud"
     }

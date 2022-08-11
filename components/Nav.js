@@ -38,7 +38,7 @@ const Nav = ({ open, setOpen, lang }) => {
             : open
             ? 'border-none py-3 md:py-4'
             : 'py-2 md:border-b',
-          'item-center  relative mx-auto flex max-w-screen-lg justify-between px-4  transition-all duration-300 ease-out md:py-2 lg:justify-start 2xl:max-w-screen-xl'
+          'item-center  relative mx-auto flex max-w-screen-lg justify-between px-4  transition-all duration-300 ease-out md:py-2 lg:justify-between 2xl:max-w-screen-xl'
         )}
       >
         <Link href={'/'}>
@@ -63,31 +63,87 @@ const Nav = ({ open, setOpen, lang }) => {
           </div>
         </Link>
 
-        <Popover.Group className='menu-item flex hidden flex-grow items-center justify-evenly lg:flex'>
-          <NavItem title={t('nav-item.services')}>
-            <div className='border-r border-gray-200 pr-4'>
-              <h1 className='mb-6 font-bold text-gray-400'>
-                Resto/Office/Business
+        <Popover.Group className='menu-item flex hidden flex-grow items-center justify-evenly lg:flex xl:max-w-screen-md'>
+          <NavItem title={t('nav-item.product')}>
+            <div className='min-w-[248px] max-w-screen-md  border-r border-gray-200 pr-4'>
+              <h1 className='mb-2 font-bold text-gray-400'>
+                Software Solution
               </h1>
 
-              {softwares_detail
-                .filter(
-                  (value) => value.name !== 'S-ERP' && value.name !== 'P-ERP'
-                )
-                .map((x) => (
+              {softwares_detail.map((x) => (
+                <Popover.Button
+                  as={Link}
+                  key={x.id}
+                  href={`/products/${x.localesId}`}
+                  locale={locale}
+                >
+                  <div className='mb-2 rounded-xl p-2 hover:cursor-pointer hover:bg-slate-100'>
+                    <h2 className='font-bold text-primaryBrand  xl:text-lg'>
+                      {x.name}
+                    </h2>
+
+                    <p className='text-sm'>{x.desc}</p>
+                  </div>
+                </Popover.Button>
+              ))}
+            </div>
+            <div className='w-full space-y-4 pr-4'>
+              <div>
+                <h1 className='mb-2 font-bold text-gray-400 '>
+                  {hardware[0].category}
+                </h1>
+
+                {hardware[0].products.map((x) => (
                   <Popover.Button
                     as={Link}
-                    key={x.id}
-                    href={`/services/${x.localesId}`}
-                    locale={locale}
+                    href={`/hardware/${x.localesId}`}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                    key={x.name}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
                       {x.name}
                     </div>
                   </Popover.Button>
                 ))}
+              </div>
+              <div>
+                <h1 className='mb-2 font-bold text-gray-400 '>
+                  {hardware[1].category}
+                </h1>
+
+                {hardware[1].products.map((x) => (
+                  <Popover.Button
+                    as={Link}
+                    href={`/hardware/${x.localesId}`}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                    key={x.name}
+                  >
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                      {x.name}
+                    </div>
+                  </Popover.Button>
+                ))}
+              </div>
+              <div>
+                <h1 className='mb-2 font-bold text-gray-400 '>
+                  {hardware[2].category}
+                </h1>
+
+                {hardware[2].products.map((x) => (
+                  <Popover.Button
+                    as={Link}
+                    href={`/hardware/${x.localesId}`}
+                    className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                    key={x.name}
+                  >
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                      {x.name}
+                    </div>
+                  </Popover.Button>
+                ))}
+              </div>
             </div>
-            <div className=' pr-4'>
+            {/* <div className=' pr-4'>
               <h1 className='mb-6 font-bold text-gray-400'>
                 Enterprise/Industry
               </h1>
@@ -108,10 +164,10 @@ const Nav = ({ open, setOpen, lang }) => {
                     </div>
                   </Popover.Button>
                 ))}
-            </div>
+            </div> */}
           </NavItem>
 
-          <NavItem title={t('nav-item.hardware')}>
+          {/* <NavItem title={t('nav-item.hardware')}>
             <div className='max-w-screen-md border-r border-gray-200 pr-4'>
               <h1 className='mb-6 font-bold text-gray-400 '>
                 {hardware[0].category}
@@ -148,7 +204,8 @@ const Nav = ({ open, setOpen, lang }) => {
                 </Popover.Button>
               ))}
             </div>
-          </NavItem>
+          </NavItem> */}
+
           <NavItem title={t('nav-item.business-solution')}>
             <div className='w-full'>
               {solutions.map((item) => (
@@ -158,7 +215,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   href={`/solutions/${item.localesId}`}
                   locale={locale}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
                     {item.name}
                   </div>
                 </Popover.Button>
@@ -185,7 +242,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   href={`/more/${item.localesId}`}
                   locale={locale}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'>
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
                     {item.name}
                   </div>
                 </Popover.Button>
@@ -232,60 +289,30 @@ const Nav = ({ open, setOpen, lang }) => {
           )}
 
           {open ? (
-            <div className='absolute top-full left-0 z-10 h-[88vh] w-full overflow-y-auto  bg-white px-6 pt-4 pb-20'>
+            <div className='absolute top-full left-0 z-10 h-[92vh] w-full overflow-y-auto  bg-white px-6 pt-4 pb-20'>
               <div className='w-full '>
-                <NavItemMobile title={'Services'}>
+                <NavItemMobile title={'Products'}>
                   <div className='border-r border-gray-200 pr-4 '>
                     <h1 className='mb-2 font-bold text-gray-400'>
-                      Resto/Office/Business
+                      Software Solution
                     </h1>
 
-                    {softwares_detail
-                      .filter(
-                        (value) =>
-                          value.name !== 'S-ERP' && value.name !== 'P-ERP'
-                      )
-                      .map((x) => (
-                        <Link
-                          key={x.id}
-                          href={`/services/${x.localesId}`}
-                          locale={locale}
+                    {softwares_detail.map((x) => (
+                      <Link
+                        key={x.id}
+                        href={`/products/${x.localesId}`}
+                        locale={locale}
+                      >
+                        <div
+                          onClick={() => setOpen(!open)}
+                          className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                         >
-                          <div
-                            onClick={() => setOpen(!open)}
-                            className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                          >
-                            {x.name}
-                          </div>
-                        </Link>
-                      ))}
+                          {x.name}
+                        </div>
+                      </Link>
+                    ))}
                   </div>
-                  <div className='mt-6'>
-                    <h1 className='mb-2 font-bold text-gray-400'>
-                      Enterprise/Franchise/Industry
-                    </h1>
-                    {softwares_detail
-                      .filter(
-                        (value) =>
-                          value.name === 'S-ERP' || value.name === 'P-ERP'
-                      )
-                      .map((x) => (
-                        <Link
-                          key={x.id}
-                          href={`/services/${x.localesId}`}
-                          locale={locale}
-                        >
-                          <div
-                            onClick={() => setOpen(!open)}
-                            className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
-                          >
-                            {x.name}
-                          </div>
-                        </Link>
-                      ))}
-                  </div>
-                </NavItemMobile>
-                <NavItemMobile title={'Hardware'}>
+
                   {hardware.map((item) => (
                     <div key={item} className='py-2 pr-4'>
                       <h1 className='mb-2 font-bold text-gray-400'>
@@ -309,6 +336,30 @@ const Nav = ({ open, setOpen, lang }) => {
                     </div>
                   ))}
                 </NavItemMobile>
+                {/* <NavItemMobile title={'Hardware'}>
+                  {hardware.map((item) => (
+                    <div key={item} className='py-2 pr-4'>
+                      <h1 className='mb-2 font-bold text-gray-400'>
+                        {item.category}
+                      </h1>
+
+                      {item.products.map((menu) => (
+                        <Link
+                          key={menu.id}
+                          href={`/hardware/${menu.localesId}`}
+                          locale={locale}
+                        >
+                          <div
+                            onClick={() => setOpen(!open)}
+                            className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
+                          >
+                            {menu.name}
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </NavItemMobile> */}
                 <NavItemMobile title={'Business Solution'}>
                   {solutions.map((menu) => (
                     <Link

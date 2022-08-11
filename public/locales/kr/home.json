@@ -30,12 +30,13 @@
       "brand": "H",
       "description": "Manajemen penggajian berdasarkan absensi kehadiran menggunakan perangkat biometrik"
     },
-    "Easy HR": {
-      "title": "Easy HR",
-      "cta": "Klik untuk pelajari",
-      "brand": "HR",
-      "description": "Manajemen karyawan untuk mencatat semua data yang dibutuhkan HRIS."
+    "ERP System": {
+      "title": "ERP System",
+      "cta": "learn more",
+      "brand": "ERP",
+      "description": "Enterprise Resource Planning (ERP) system for your business."
     },
+
     "Groupware": {
       "title": "Groupware",
       "cta": "Klik untuk pelajari",

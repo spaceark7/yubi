@@ -15,6 +15,7 @@ import RequestDemo from '../components/RequestDemo'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRef } from 'react'
+import { BsWhatsapp } from 'react-icons/bs'
 
 export default function Home() {
   const { t } = useTranslation('home')
@@ -48,7 +49,7 @@ export default function Home() {
                     block: 'end',
                   })
                 }
-                className='btn-outline large-mobile:text-base border-white text-sm  hover:bg-white hover:text-gray-600 '
+                className='btn-outline large-mobile:text-base border-white text-sm  hover:bg-white hover:text-gray-600 lg:text-lg'
               >
                 {t('hero.hero_action_cta')}
               </button>
@@ -56,14 +57,15 @@ export default function Home() {
                 href='https://wa.me/+6281290049231'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='btn large-mobile:text-base bg-primaryBrand text-sm hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand'
+                className='btn large-mobile:text-base bg-primaryBrand pl-4 text-sm hover:bg-primaryBrand/80 hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-primaryBrand lg:text-lg'
               >
+                <BsWhatsapp className='mr-2 inline-block h-5 w-5 ' />
                 {t('hero.hero_action_message')}
               </a>
             </div>
           </div>
-          <div className='absolute bottom-0 -z-10 mx-auto w-screen '>
-            <div className='large-mobile:translate-x-1 relative mx-auto w-[45vh] translate-x-0 overflow-hidden opacity-90 sm:w-[50vh] md:w-[60vh] 2xl:w-[80vh]  '>
+          <div className='absolute bottom-0 -z-10 mx-auto w-screen'>
+            <div className='large-mobile:translate-x-1 relative mx-auto w-[45vh] translate-x-0 overflow-hidden opacity-90 sm:w-[50vh] md:w-[60vh] 2xl:w-[35vw]  '>
               <Image
                 priority={true}
                 className='ml-12 w-full'
@@ -133,13 +135,15 @@ export default function Home() {
         </section>
         {/* ERP */}
         <ERPSection />
-        {/* Testimonial */}
-        <SliderTestimony />
+
+        {/* Testimonial Not yet implemented */}
+        {/* <SliderTestimony /> */}
+
         {/* Business Solution */}
         <BusinessSolution />
 
         {/* Contact Us */}
-        <ContactSection />
+        <ContactSection bgSlate={true} />
 
         {/* Request Demo CTA */}
         <RequestDemo />
