@@ -41,7 +41,7 @@ const NavItem = ({ title, children }) => {
             >
               <div className='w-full max-w-xl overflow-hidden rounded-xl shadow-xl ring-1 ring-gray-500 ring-opacity-30 xl:max-w-4xl'>
                 <div
-                  onClick={() => setIsShowing(false)}
+                  // onClick={() => setIsShowing(false)}
                   className='relative grid gap-x-10 bg-white px-12 py-8 lg:grid-flow-col lg:text-sm'
                 >
                   {children}

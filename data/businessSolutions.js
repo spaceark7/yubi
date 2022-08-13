@@ -4,6 +4,39 @@ const solutions = [
     name: 'Resto, Cafe & Retail',
     localesId: 'resto-cafe-retail',
     brand: 'POS',
+    solutions: {
+      software: [
+        {
+          name: 'Easy POS',
+          localesId: 'easy-pos',
+          desc: 'Point Of Sales Desktop Application',
+        },
+        {
+          name: 'Easy H & HR',
+          localesId: 'easy-h',
+          desc: 'Payroll & Employee Management.',
+        },
+        {
+          name: 'S-ERP',
+          localesId: 's-erp',
+          desc: 'ERP software for manage enterprise',
+        },
+      ],
+      hardware: [
+        {
+          name: 'CCTV camera & Access Control',
+          localesId: 'cctv',
+        },
+        {
+          name: 'Network & Telephone',
+          localesId: 'network-telephone',
+        },
+        {
+          name: 'Server & Desktop Computer',
+          localesId: 'server-desktop-computer',
+        },
+      ],
+    },
     hero_section: {
       is_dark: false,
       disable_slider: true,
@@ -63,6 +96,44 @@ const solutions = [
     name: 'Office / Business',
     localesId: 'office-business',
     brand: 'POS',
+    solutions: {
+      software: [
+        {
+          name: 'Easy A',
+          localesId: 'easy-a',
+          desc: 'Accounting management software.',
+        },
+        {
+          name: 'Easy H & HR',
+          localesId: 'easy-h',
+          desc: 'Payroll & Employee Management.',
+        },
+        {
+          name: 'S-ERP',
+          localesId: 's-erp',
+          desc: 'ERP software for manage enterprise',
+        },
+        {
+          name: 'Groupware',
+          localesId: 'groupware',
+          desc: 'Mailing & Project management software',
+        },
+      ],
+      hardware: [
+        {
+          name: 'CCTV camera & Access Control',
+          localesId: 'cctv',
+        },
+        {
+          name: 'Network & Telephone',
+          localesId: 'network-telephone',
+        },
+        {
+          name: 'Server & Desktop Computer',
+          localesId: 'server-desktop-computer',
+        },
+      ],
+    },
     hero_section: {
       is_dark: true,
       disable_slider: true,
@@ -133,6 +204,50 @@ const solutions = [
     name: 'Franchise',
     localesId: 'franchise',
     brand: 'Franchise Software Management',
+    solutions: {
+      software: [
+        {
+          name: 'S-ERP',
+          localesId: 's-erp',
+          desc: 'ERP software for manage enterprise',
+        },
+        {
+          name: 'Easy POS',
+          localesId: 'easy-pos',
+          desc: 'Point Of Sales Desktop Application',
+        },
+        {
+          name: 'Easy A',
+          localesId: 'easy-a',
+          desc: 'Accounting management software.',
+        },
+        {
+          name: 'Easy H & HR',
+          localesId: 'easy-h',
+          desc: 'Payroll & Employee Management.',
+        },
+
+        {
+          name: 'Groupware',
+          localesId: 'groupware',
+          desc: 'Mailing & Project management software',
+        },
+      ],
+      hardware: [
+        {
+          name: 'CCTV camera & Access Control',
+          localesId: 'cctv',
+        },
+        {
+          name: 'Network & Telephone',
+          localesId: 'network-telephone',
+        },
+        {
+          name: 'Server & Desktop Computer',
+          localesId: 'server-desktop-computer',
+        },
+      ],
+    },
     hero_section: {
       is_dark: false,
       disable_slider: true,
@@ -254,6 +369,46 @@ const solutions = [
     name: 'Factory / Manufacture',
     localesId: 'factory-manufacture',
     brand: 'Bea Cukai, Software Inventory Management',
+    solutions: {
+      software: [
+        {
+          name: 'Easy AI',
+          localesId: 'easy-ai',
+          desc: 'Inventory management & Accounting Software.',
+        },
+
+        {
+          name: 'Easy H & HR',
+          localesId: 'easy-h',
+          desc: 'Payroll & Employee Management.',
+        },
+
+        {
+          name: 'Groupware',
+          localesId: 'groupware',
+          desc: 'Mailing & Project management software',
+        },
+        {
+          name: 'S-ERP',
+          localesId: 's-erp',
+          desc: 'ERP software for manage enterprise',
+        },
+      ],
+      hardware: [
+        {
+          name: 'CCTV camera & Access Control',
+          localesId: 'cctv',
+        },
+        {
+          name: 'Network & Telephone',
+          localesId: 'network-telephone',
+        },
+        {
+          name: 'Server & Desktop Computer',
+          localesId: 'server-desktop-computer',
+        },
+      ],
+    },
     hero_section: {
       is_dark: true,
       disable_slider: true,

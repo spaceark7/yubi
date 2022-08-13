@@ -1,4 +1,4 @@
-import { Popover, Disclosure } from '@headlessui/react'
+import { Popover, Disclosure, Tab } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Logo from '../assets/yubi_logo.png'
@@ -14,6 +14,7 @@ import { hardware, softwares_detail } from '../data/software'
 import { useRouter } from 'next/router'
 import { solutions } from '../data/businessSolutions'
 import more_info from '../data/moreInfo'
+import NavItemBusiness from './NavItemBusiness'
 
 const Nav = ({ open, setOpen, lang }) => {
   const scrollPos = useScrollHooks()
@@ -208,7 +209,8 @@ const Nav = ({ open, setOpen, lang }) => {
 
           <NavItem title={t('nav-item.business-solution')}>
             <div className='w-full'>
-              {solutions.map((item) => (
+              <NavItemBusiness />
+              {/* {solutions.map((item) => (
                 <Popover.Button
                   as={Link}
                   key={item.id}
@@ -219,7 +221,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     {item.name}
                   </div>
                 </Popover.Button>
-              ))}
+              ))} */}
             </div>
           </NavItem>
 

@@ -840,6 +840,55 @@ const hardware = [
             },
           ],
         },
+        implementation_section: {
+          title: 'Use Case illustration',
+          description: 'Typical implementation of CCTV & Access Control',
+          image: '/products/hardware/cctv/implementation.png',
+          details: [
+            {
+              id: '1',
+              title: 'LAN Connection',
+              description:
+                'The camera connected to the Encoder using PoE LAN cable',
+              image: '/products/hardware/cctv/lan.png',
+            },
+            {
+              id: '2',
+              title: 'Easy Integration to third party apps for Fingerprint',
+              description:
+                'The fingerprint reader used for employee attendance and also act as employee access',
+              image: '/products/hardware/cctv/integrated.png',
+            },
+            {
+              id: '3',
+              title: 'Monitoring Room',
+              description:
+                'The monitoring room stream the video from the camera',
+              image: '/products/hardware/cctv/monitor.png',
+            },
+          ],
+        },
+        application_section: {
+          title: 'Solution for industry',
+          description: 'Our solution applicable for various industries',
+          list: [
+            {
+              id: '1',
+              title: 'Factory',
+              image: '/products/hardware/cctv/factory.webp',
+            },
+            {
+              id: '2',
+              title: 'Office',
+              image: '/products/hardware/cctv/office.webp',
+            },
+            {
+              id: '3',
+              title: 'Resto',
+              image: '/products/hardware/cctv/resto.webp',
+            },
+          ],
+        },
         hardware_section: {
           title: 'We are providing the best hardware for optimal output',
           list_product: [
@@ -874,50 +923,50 @@ const hardware = [
           ],
         },
       },
-      {
-        id: '2',
-        name: 'Access Control & Attendance Machine',
-        localesId: 'access-control-attendance',
-        hero_section: {
-          image: '/products/hardware/access_control/ac_hero.webp',
-          mobile_image: '/products/hardware/access_control/sm_ac_hero.webp',
-          medium_image: '/products/hardware/access_control/sm_ac_hero.webp',
-          is_dark: true,
-          disable_slider: true,
-          title: 'Control access with door lock and attendance devices',
-          description:
-            'Biometric device or digital devices for accessing control',
-        },
-        hardware_section: {
-          title: 'Attendance Machine & Access Control devices',
-          list_product: [
-            {
-              image: '/products/hardware/access_control/1.webp',
-              name: 'Suprema Smart door lock',
-            },
-            {
-              image: '/products/hardware/access_control/2.webp',
-              name: 'Suprema Smart door lock R Series',
-            },
-            {
-              image: '/products/hardware/access_control/3.webp',
-              name: 'Doorma Mechanical door lock',
-            },
-            {
-              image: '/products/hardware/access_control/4.webp',
-              name: 'IDTECK Fingerprint',
-            },
-            {
-              image: '/products/hardware/access_control/5.webp',
-              name: 'IDTECK Fingerprint W-Series',
-            },
-            {
-              image: '/products/hardware/access_control/6.webp',
-              name: 'IDTECK RFID Card',
-            },
-          ],
-        },
-      },
+      // {
+      //   id: '2',
+      //   name: 'Access Control & Attendance Machine',
+      //   localesId: 'access-control-attendance',
+      //   hero_section: {
+      //     image: '/products/hardware/access_control/ac_hero.webp',
+      //     mobile_image: '/products/hardware/access_control/sm_ac_hero.webp',
+      //     medium_image: '/products/hardware/access_control/sm_ac_hero.webp',
+      //     is_dark: true,
+      //     disable_slider: true,
+      //     title: 'Control access with door lock and attendance devices',
+      //     description:
+      //       'Biometric device or digital devices for accessing control',
+      //   },
+      //   hardware_section: {
+      //     title: 'Attendance Machine & Access Control devices',
+      //     list_product: [
+      //       {
+      //         image: '/products/hardware/access_control/1.webp',
+      //         name: 'Suprema Smart door lock',
+      //       },
+      //       {
+      //         image: '/products/hardware/access_control/2.webp',
+      //         name: 'Suprema Smart door lock R Series',
+      //       },
+      //       {
+      //         image: '/products/hardware/access_control/3.webp',
+      //         name: 'Doorma Mechanical door lock',
+      //       },
+      //       {
+      //         image: '/products/hardware/access_control/4.webp',
+      //         name: 'IDTECK Fingerprint',
+      //       },
+      //       {
+      //         image: '/products/hardware/access_control/5.webp',
+      //         name: 'IDTECK Fingerprint W-Series',
+      //       },
+      //       {
+      //         image: '/products/hardware/access_control/6.webp',
+      //         name: 'IDTECK RFID Card',
+      //       },
+      //     ],
+      //   },
+      // },
       // {
       //   id: '3',
       //   name: 'Office Telephone PABX',
@@ -977,7 +1026,7 @@ const hardware = [
       {
         id: '4',
         name: 'Network Installation & Telephone',
-        localesId: 'pos-hardware-peripheral',
+        localesId: 'network-telephone',
         hero_section: {
           image: '/products/hardware/pos/pos_hero.webp',
           mobile_image: '/products/hardware/pos/sm_pos_hero.webp',

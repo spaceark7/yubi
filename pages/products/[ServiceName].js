@@ -40,9 +40,9 @@ const ServiceName = ({ data }) => {
       {data.banner?.map((item, index) => (
         <Banner key={index} data={item} />
       ))}
-      {data.testimonial && (
+      {/* {data.testimonial && (
         <SliderTestimony is_slate={!data.banner?.length - 1} />
-      )}
+      )} */}
       <ContactSection bgSlate={data.banner?.length - 1} />
       <RequestDemo model={false} />
     </>
