@@ -79,7 +79,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   locale={locale}
                 >
                   <div className='mb-2 rounded-xl p-2 hover:cursor-pointer hover:bg-slate-100'>
-                    <h2 className='font-bold text-primaryBrand  xl:text-lg'>
+                    <h2 className='font-bold text-primaryBrand  2xl:text-lg'>
                       {x.name}
                     </h2>
 
@@ -101,7 +101,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                     key={x.name}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline 2xl:text-lg'>
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -119,7 +119,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                     key={x.name}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline 2xl:text-lg'>
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -137,7 +137,7 @@ const Nav = ({ open, setOpen, lang }) => {
                     className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline'
                     key={x.name}
                   >
-                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                    <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline 2xl:text-lg'>
                       {x.name}
                     </div>
                   </Popover.Button>
@@ -244,7 +244,7 @@ const Nav = ({ open, setOpen, lang }) => {
                   href={`/more/${item.localesId}`}
                   locale={locale}
                 >
-                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline xl:text-lg'>
+                  <div className='mb-2 font-bold text-primaryBrand hover:cursor-pointer hover:underline 2xl:text-lg'>
                     {item.name}
                   </div>
                 </Popover.Button>

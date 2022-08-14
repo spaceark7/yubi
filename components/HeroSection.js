@@ -3,6 +3,7 @@ import SliderCustomer from './SliderCustomer'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { BsWhatsapp } from 'react-icons/bs'
 
 const HeroSection = ({ customers, data }) => {
   const router = useRouter()
@@ -65,7 +66,8 @@ const HeroSection = ({ customers, data }) => {
                         : 'btn mt-12 bg-tertiaryBrand hover:text-opacity-100 hover:shadow-md active:scale-95 active:bg-tertiaryBrand 2xl:text-xl'
                     } w-fit select-none lg:px-6`}
                   >
-                    Send WhatApps Message
+                    <BsWhatsapp className='mr-2 inline-block h-5 w-5 ' /> Send
+                    WhatApps
                   </a>
                 )}
 

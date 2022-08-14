@@ -1028,13 +1028,103 @@ const hardware = [
         name: 'Network Installation & Telephone',
         localesId: 'network-telephone',
         hero_section: {
-          image: '/products/hardware/pos/pos_hero.webp',
+          image: '/products/hardware/pabx/network-phone.webp',
           mobile_image: '/products/hardware/pos/sm_pos_hero.webp',
           medium_image: '/products/hardware/pos/md_pos_hero.webp',
           is_dark: true,
           disable_slider: true,
-          title: 'Optimize Yubi POS features',
-          description: 'We are recommending the best POS hardware for Yubi POS',
+          cta: 'Learn More',
+          title: 'Network Solution & Communication',
+          description:
+            'We are providing networking infrasucture such as (routing, wiring & schema) for business and telephone',
+        },
+        solution_section: {
+          title: 'Our proven strategy ',
+          description:
+            'We have a proven strategy to ensure the highest security and efficiency',
+          list: [
+            {
+              id: '1',
+              title: 'Step 1',
+              description: 'Analyzing Needs & Environment',
+              content:
+                "We'll analyze your needs and environment to determine the best solution for you.",
+              image: '/products/hardware/cctv/step1.png',
+            },
+            {
+              id: '2',
+              title: 'Step 2',
+              description: 'Planning',
+              content:
+                'Process to ensure material usage ,budgeting and scheduling. Then we will inform quotation & pricing.',
+              image: '/products/hardware/cctv/step2.png',
+            },
+            {
+              id: '3',
+              title: 'Step 3',
+              description: 'Installation',
+              content:
+                'The installation process in the field with reference to the plans and quotation that have been approved in the previous process.',
+              image: '/products/hardware/cctv/step3.png',
+            },
+            {
+              id: '4',
+              title: 'Step 4',
+              description: 'Maintenance',
+              content:
+                'To ensure all the system is working properly, we are offering optional service for maintenance reguarly or call base.',
+              image: '/products/hardware/cctv/step4.png',
+            },
+          ],
+        },
+        implementation_section: {
+          title: 'Use Case illustration',
+          description: 'Typical implementation of network installation',
+          image: '/products/hardware/pabx/network.webp',
+          details: [
+            {
+              id: '1',
+              title: 'Controller',
+              description:
+                'Main network controller that is managing for the entire network',
+              image: '/products/hardware/pabx/controller.png',
+            },
+            {
+              id: '2',
+              title: 'Wired Network',
+              description:
+                'Wired network for office computer and other devices such as printers, scanners, etc',
+              image: '/products/hardware/cctv/lan.png',
+            },
+            {
+              id: '3',
+              title: 'Wireless Network',
+              description:
+                'Can be private or public wireless network for the office',
+              image: '/products/hardware/pabx/wireless.png',
+            },
+          ],
+        },
+        application_section: {
+          title: 'Solution for industry',
+          description: 'Our solution applicable for various industries',
+          list: [
+            {
+              id: '1',
+              title: 'Factory',
+              image: '/products/hardware/pabx/factory.webp',
+            },
+            {
+              id: '2',
+              title: 'Office',
+              image: '/products/hardware/pabx/office.webp',
+            },
+            {
+              id: '3',
+              title: 'Resto',
+              image: '/products/hardware/pabx/resto.webp',
+            },
+          ],
         },
         hardware_section: {
           title: 'PC POS Hardware & Peripheral',

@@ -20,8 +20,8 @@ const NavItemBusiness = () => {
           <Tab
             className={({ selected }) =>
               selected
-                ? 'before:w-100 relative z-10 px-4 py-2 text-left text-lg font-bold text-primaryBrand before:absolute before:left-0 before:bottom-0 before:z-0 before:h-full before:border-b-2 before:border-b-primaryBrand before:content-[""] '
-                : 'before:content-[" "] relative rounded-lg px-4 py-2 text-left text-lg font-bold text-slate-400 before:absolute before:left-0 before:bottom-0 before:w-0 hover:bg-gray-100 hover:text-slate-500'
+                ? 'before:w-100 relative z-10 px-4 py-2 text-left font-bold text-primaryBrand before:absolute before:left-0 before:bottom-0 before:z-0 before:h-full before:border-b-2 before:border-b-primaryBrand before:content-[""] 2xl:text-lg '
+                : 'before:content-[" "] relative rounded-lg px-4 py-2 text-left font-bold text-slate-400 before:absolute before:left-0 before:bottom-0 before:w-0 hover:bg-gray-100 hover:text-slate-500 2xl:text-lg'
             }
             key={index}
           >
@@ -38,7 +38,7 @@ const NavItemBusiness = () => {
                 {data.solutions?.software.map((solution, index) => (
                   <Link href={`/products/${solution.localesId}`} key={index}>
                     <div className='mb-2 rounded-xl p-2 hover:cursor-pointer hover:bg-slate-100'>
-                      <h2 className='font-bold text-primaryBrand  xl:text-lg'>
+                      <h2 className='font-bold text-primaryBrand  2xl:text-lg'>
                         {solution.name}
                       </h2>
 

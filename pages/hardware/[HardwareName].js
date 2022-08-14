@@ -43,13 +43,13 @@ const HardwareName = ({ data }) => {
                         />
                       </div>
                       <div>
-                        <h2 className='text-lg'>{item.title}</h2>
-                        <h1 className='text-xl font-bold'>
+                        <h2 className='2xl:text-lg'>{item.title}</h2>
+                        <h1 className='text-lg font-bold 2xl:text-xl'>
                           {item.description}
                         </h1>
                       </div>
                     </div>
-                    <p className=''>{item.content}</p>
+                    <p className='text-sm 2xl:text-base'>{item.content}</p>
                   </div>
                 ))}
               </div>
@@ -67,10 +67,10 @@ const HardwareName = ({ data }) => {
               {data.implementation_section.description}
             </p>
             <div className='mb-6 mt-4 flex gap-x-4 py-2'>
-              <div className='my-auto w-1/3 space-y-4'>
+              <div className='my-auto w-1/3 2xl:space-y-4'>
                 {data.implementation_section.details?.map((item, index) => (
                   <div className='border-b border-b-slate-300 p-4' key={index}>
-                    <div className='relative h-14 w-14'>
+                    <div className='relative h-10 w-10 2xl:h-14 2xl:w-14'>
                       <Image
                         src={item.image}
                         alt={item.title}
@@ -78,10 +78,12 @@ const HardwareName = ({ data }) => {
                         objectFit='contain'
                       />
                     </div>
-                    <h1 className='mb-2 text-xl font-bold text-slate-700'>
+                    <h1 className='mb-2 font-bold text-slate-700 2xl:text-xl'>
                       {item.title}
                     </h1>
-                    <p className='text-slate-600'>{item.description}</p>
+                    <p className='text-sm text-slate-600 2xl:text-base'>
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -101,7 +103,7 @@ const HardwareName = ({ data }) => {
 
       {data?.application_section && (
         <section className='h-full w-full pt-12' id='applications'>
-          <Layout>
+          <Layout className='pb-0'>
             <h1 className='mb-3 text-center text-3xl font-bold'>
               {data.application_section?.title}
             </h1>
@@ -120,8 +122,8 @@ const HardwareName = ({ data }) => {
                       <Tab
                         className={({ selected }) =>
                           selected
-                            ? 'rounded-full px-4 py-2 text-2xl text-sky-600 outline-none ring-2 ring-sky-500'
-                            : 'px-4 py-2 text-2xl'
+                            ? 'rounded-full px-4 py-2 text-lg text-sky-600 outline-none ring-2 ring-sky-500 2xl:text-2xl'
+                            : 'px-4 py-2 text-lg 2xl:text-2xl'
                         }
                         key={index}
                       >
@@ -135,7 +137,7 @@ const HardwareName = ({ data }) => {
                   {data.application_section.list?.map((item, index) => (
                     <Tab.Panel
                       className={
-                        'relative mt-8 aspect-video max-h-[500px] w-full rounded-2xl'
+                        'relative mt-8 aspect-video max-h-[60vh] w-full rounded-2xl 2xl:max-h-[500px]'
                       }
                       key={index}
                     >
